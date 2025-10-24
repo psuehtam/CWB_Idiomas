@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+:root {
+    /* Cores principais da CWB Idiomas */
+    --green-color: #30C5A1;      /* Verde principal */
+    --green-color-dark: #26a085;       /* Verde escuro */
+    --green-color-light: #4dd4b8;      /* Verde claro */
+    --yellow-color: #FFC428;    /* Amarelo */
+    --magent-color: #EE1362;       /* Rosa/Magenta */
+    --dark-bg: #17171C;            /* Fundo escuro */
+    --white: #ffffff;
+    --light-gray: #f8fafc;
+    --gray: #64748b;
+    --dark-gray: #334155;
+    --text-dark: #1e293b;
+    
+    /* Gradientes */
+    --gradient-primary: linear-gradient(135deg, #30C5A1 0%, #4dd4b8 100%);
+    --gradient-secondary: linear-gradient(135deg, #FFC428 0%, #f59e0b 100%);
+    --gradient-accent: linear-gradient(135deg, #EE1362 0%, #ff4081 100%);
+}
