@@ -227,7 +227,6 @@
     color: var(--green-color);
 }
 
-
 /* ===== BOTÃO WHATSAPP ===== */
 .whatsapp-button {
     position: fixed;
@@ -236,7 +235,7 @@
     width: 60px;
     height: 60px;
     background: #25D366;
-    color: var(--white);
+    color: black;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -248,8 +247,39 @@
     z-index: 1000;
 }
 
+
 .whatsapp-button:hover {
     transform: scale(1.1);
     box-shadow: var(--shadow-xl);
 }
+.whatsapp-button::before, .whatsapp-button::after {
+    content:'';
+    display: block;
+    position: absolute;
+    left: -60px;
+    top: -60px;
+    right: -60px;
+    bottom: -60px;
+    border: 1px solid  #25D366;
+    border-radius: 50%;
+    animation: animar 1.5s linear infinite;
+    opacity: 0;
+}
+.whatsapp-button::after{
+    animation-delay: 0.5s;
+}
 
+@keyframes animar{
+    0%{
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    50%{
+
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
