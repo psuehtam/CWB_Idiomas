@@ -68,15 +68,15 @@
     </section>
     <section class="option">
         <div class="option-conteiner">
-            <button class="classification">Todos</button>
-            <button class="classification">Kids</button>
-            <button class="classification">Teens</button>
-            <button class="classification">Adults</button>
-            <button class="classification">Preparatórios</button>
-            <button class="classification">Conversação</button>
+            <button onclick="showSection('Todos')" onclick="showSection1('Todos')" class="classification">Todos</button>
+            <button onclick="showSection('Kids')" onclick="showSection1('Kids')" class="classification">Kids</button>
+            <button onclick="showSection('Teens')" onclick="showSection1('Teens')" class="classification">Teens</button>
+            <button onclick="showSection('Adults')" onclick="showSection1('Adults')" class="classification">Adults</button>
+            <button onclick="showSection('Preparatorios')" onclick="showSection1('Preparatorios')" class="classification">Preparatórios</button>
+            <button onclick="showSection('Conversacao')" onclick="showSection1('Conversacao')" class="classification">Conversação</button>
         </div>
     </section>
-    <section class="kids">
+    <section  id="Kids" class="kids secao ativa">
         <div class="option-kids">
             <h1>Kids (6-12 anos)</h1>
             <p>Aprendizado lúdico e divertido para crianças</p>
@@ -150,7 +150,7 @@
         </div>
     </section>
 
-    <section class="teens">
+    <section id="Teens" class="teens secao ativa">
         <div class="option-teens">
             <h1>Teens (13-17 anos)</h1>
             <p>Preparação para o futuro com foco em conversação</p>
@@ -224,7 +224,7 @@
         </div>
     </section>
 
-    <section class="Adults">
+    <section id="Adults" class="Adults secao ativa">
         <div class="option-Adults">
             <h1>Adults (18+ anos)</h1>
             <p>Desenvolvimento profissional e pessoal</p>
@@ -319,7 +319,7 @@
             </div>
         </div>
     </section>
-        <section class="teens">
+        <section id="Preparatorios" class="teens secao ativa">
         <div class="option-teens">
             <h1>Preparatórios</h1>
             <p>Preparação para o futuro com foco em conversação</p>
@@ -392,7 +392,7 @@
 
         </div>
     </section>
-     <section class="Adults">
+     <section id="Conversacao" class="Adults secao ativa">
         <div class="option-Adults">
             <h1>Conversação</h1>
             <p>Desenvolvimento profissional e pessoal</p>
