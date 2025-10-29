@@ -1,0 +1,177 @@
+###########################################################################################
+
+COMEÇAR A PROGRAMAR
+
+==========================================================================================
+
+1️⃣ Atualizar sua develop local com o que seus amigos já fizeram
+
+Primeiro, vá para a branch develop:
+
+        git checkout develop
+
+Agora puxe as alterações do GitHub:
+
+        git pull origin develop
+
+✅ Agora sua develop local está atualizada com tudo que seus amigos fizeram.
+💡 Dica importantes
+Sempre faça git pull antes de começar a mexer para evitar conflitos grandes.
+
+==========================================================================================
+
+2️⃣ Criar uma nova feature para suas tarefas
+
+        git flow feature start tarefa-exemplo
+
+Isso cria e muda para a branch feature/tarefa-exemplo.
+
+Sempre crie suas features a partir de uma develop atualizada.
+
+==========================================================================================
+
+3️⃣ Trabalhar na feature
+
+Faça suas alterações nos arquivos.
+
+Quando quiser salvar progresso local:
+
+        git add .
+        git commit -m "Fiz Tal Coisa"
+
+Pode fazer vários commits enquanto trabalha na feature.
+💡 Dica importantes
+Faça commits pequenos e frequentes.
+
+==========================================================================================
+
+4️⃣ Publicar a feature para que outros vejam ou colaborem
+
+        git flow feature publish tarefa-exemplo
+
+Isso envia sua branch feature/tarefa-exemplo para o GitHub.
+
+✅Seus amigos agora podem puxar sua feature se precisarem trabalhar nela também.
+
+==========================================================================================
+
+5️⃣ Finalizar a feature e unir na develop
+
+Quando terminar todas as mudanças:
+
+Certifique-se que a develop está atualizada:
+
+        git checkout develop
+        git pull origin develop
+
+Volte para sua feature:
+
+        git checkout feature/tarefa-exemplo
+
+Sincronize sua feature com a develop (merge):
+
+        git merge develop
+
+Resolva conflitos, se houver.
+
+Commit se precisar.
+
+Finalize a feature:
+
+        git flow feature finish tarefa-exemplo
+
+Isso faz merge da feature na develop e apaga a branch local de feature.
+
+==========================================================================================
+
+6️⃣ Subir a develop atualizada para o GitHub
+
+        git push origin develop
+
+✅Agora todo mundo já consegue pegar suas alterações.
+
+###########################################################################################
+
+Como seus amigos pegam o que você fez
+
+==========================================================================================
+
+No computador deles:
+
+        git checkout develop
+        git pull origin develop
+
+###########################################################################################
+
+CASO PROGRAME DENTRO DE UMA DEVELOP SEM QUERER
+
+==========================================================================================
+
+1️⃣Criar a feature branch a partir da develop atual
+
+        git checkout -b feature/nome-da-feature
+
+Isso cria uma branch nova chamada feature/nome-da-feature com todas as alterações que você já fez na develop.
+Agora você está na feature branch.
+
+==========================================================================================
+
+2️⃣ Commitar suas alterações na feature
+
+        git add .
+        git commit -m "Minhas alterações que estavam na develop"
+
+Agora suas alterações estão salvas na feature branch.
+
+==========================================================================================
+
+3️⃣ Voltar para a develop e descartar as alterações de lá
+
+Se você quiser limpar a develop, volte para ela e descarte o que estava lá:
+
+        git checkout develop
+        git reset --hard origin/develop
+
+git reset --hard origin/develop faz a develop local ficar exatamente igual à develop do GitHub, sem suas alterações que agora estão na feature.
+
+==========================================================================================
+
+4️⃣ Continuar trabalhando na feature
+
+Agora você pode trabalhar normalmente na feature:
+
+        git checkout feature/nome-da-feature
+
+Commit frequente:
+
+        git add .
+        git commit -m "Outra melhoria na feature"
+
+Publicar para o GitHub (se quiser):
+
+        git flow feature publish nome-da-feature
+
+==========================================================================================
+
+5️⃣ Finalizar a feature e unir na develop (quando terminar)
+
+Certifique-se que a develop está atualizada:
+
+        git checkout develop
+        git pull origin develop
+
+Volte para a feature:
+
+        git checkout feature/nome-da-feature
+
+Sincronize com a develop:
+
+        git merge develop
+
+Finalize a feature:
+
+        git flow feature finish nome-da-feature
+
+Suba a develop atualizada para o GitHub:
+
+        git push origin develop
