@@ -1,592 +1,554 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CWB Idiomas - Cursos</title>
-    <link rel="icon" href="img/icone-cwb-padrao.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/cursos.css">
-</head>
-
-<body>
-    <header class="header" id="header">
-        <nav class="navbar">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CWB Idiomas - Cursos</title>
+      <meta name="description" content="Conheça os cursos de inglês, espanhol e outros idiomas da CWB Idiomas. Aulas dinâmicas, turmas reduzidas e foco na conversação." />
+      <link rel="icon" href="img/icone-cwb-padrao.svg" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link rel="stylesheet" href="css/global.css">
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/cursos.css">
+   </head>
+   <body>
+      <header class="header" id="header">
+         <nav class="navbar">
             <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="index.html">
-                        <img src="img/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo">
-                    </a>
-                </div>
-
-                <div class="nav-menu" id="nav-menu">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link ">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="cursos.html" class="nav-link active">Cursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="metodologia.html" class="nav-link">Metodologia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="sobre.html" class="nav-link">Sobre Nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="planos.html" class="nav-link">Planos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="eventos.html" class="nav-link">Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="faq.html" class="nav-link">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contato.html" class="nav-link">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-toggle" id="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+               <div class="nav-logo">
+                  <a href="index.html">
+                  <img src="img/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo">
+                  </a>
+               </div>
+               <div class="nav-menu" id="nav-menu">
+                  <ul class="nav-list">
+                     <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="cursos.html" class="nav-link active">Cursos</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="metodologia.html" class="nav-link">Metodologia</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="sobre.html" class="nav-link">Sobre Nós</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="planos.html" class="nav-link">Planos</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="eventos.html" class="nav-link">Eventos</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="nav-toggle" id="nav-toggle">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+               </div>
             </div>
-        </nav>
-    </header>
-    <section class="hero">
-        <div class="hero-conteiner">
+         </nav>
+      </header>
+      <section class="hero">
+         <div class="hero-conteiner">
             <h1>Nossos cursos</h1>
             <p>Cursos de idiomas para todas as idades e níveis, com <br> metodologia inovadora e professores nativos.
             </p>
-        </div>
-    </section>
-    <section class="option">
-        <div class="option-conteiner">
+         </div>
+      </section>
+      <section class="option">
+         <div class="option-conteiner">
             <button onclick="showSection('Todos')" onclick="showSection1('Todos')" class="classification">Todos</button>
             <button onclick="showSection('Kids')" onclick="showSection1('Kids')" class="classification">Kids</button>
             <button onclick="showSection('Teens')" onclick="showSection1('Teens')" class="classification">Teens</button>
             <button onclick="showSection('Adults')" onclick="showSection1('Adults')" class="classification">Adults</button>
             <button onclick="showSection('Preparatorios')" onclick="showSection1('Preparatorios')" class="classification">Preparatórios</button>
             <button onclick="showSection('Conversacao')" onclick="showSection1('Conversacao')" class="classification">Conversação</button>
-        </div>
-    </section>
-    <section  id="Kids" class="kids secao ativa">
-        <div class="option-kids">
+         </div>
+      </section>
+      <section  id="kids" class="kids secao ativa">
+         <div class="option-kids">
             <h1>Kids (6-12 anos)</h1>
             <p>Aprendizado lúdico e divertido para crianças</p>
             <div class="box">
-                <div class="option-block">
-                    <i class="bi bi-person-arms-up icone"></i>
-                    <h2 class="name-plan">Inglês Kids</h2>
-                    <p class="description-plan">Curso de inglês desenvolvido especialmente para crianças de 6 a 12 anos,
-                        com
-                        foco na comunicação natural através de atividades lúdicas e interativas.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 12 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-
-                    <div class="price">
-                        <h3>R$ 180</h3>
-                        <p>/mês</p>
-                    </div>
-
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-
-                </div>
-                <div class="option-block">
-                    <i class="bi bi-palette icone"></i>
-                    <h2 class="name-plan">Espanhol Kids</h2>
-                    <p class="description-plan">Introdução ao espanhol através de jogos, músicas e atividades criativas,
-                        desenvolvendo a confiança das crianças no uso do idioma.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 10 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-                    <div class="price">
-                        <h3>R$ 160</h3>
-                        <p>/mês</p>
-                    </div>
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-                </div>
+               <div class="option-block">
+                  <i class="bi bi-person-arms-up icone"></i>
+                  <h2 class="name-plan">Inglês Kids</h2>
+                  <p class="description-plan">Curso de inglês desenvolvido especialmente para crianças de 6 a 12 anos,
+                     com
+                     foco na comunicação natural através de atividades lúdicas e interativas.
+                  </p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 12 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 180</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
+               <div class="option-block">
+                  <i class="bi bi-palette icone"></i>
+                  <h2 class="name-plan">Espanhol Kids</h2>
+                  <p class="description-plan">Introdução ao espanhol através de jogos, músicas e atividades criativas,
+                     desenvolvendo a confiança das crianças no uso do idioma.
+                  </p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 10 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 160</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
             </div>
-
-
-
-        </div>
-    </section>
-
-    <section id="Teens" class="teens secao ativa">
-        <div class="option-teens">
+         </div>
+      </section>
+      <section id="teens" class="teens secao ativa">
+         <div class="option-teens">
             <h1>Teens (13-17 anos)</h1>
             <p>Preparação para o futuro com foco em conversação</p>
             <div class="box">
-                <div class="option-block">
-                    <i class="bi bi-mortarboard icone"></i>
-                    <h2 class="name-plan">Inglês Teens</h2>
-                    <p class="description-plan">Curso de inglês para adolescentes com foco em conversação, preparação
-                        para exames internacionais e desenvolvimento de habilidades para o futuro acadêmico e
-                        profissional.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 12 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-
-                    <div class="price">
-                        <h3>R$ 220</h3>
-                        <p>/mês</p>
-                    </div>
-
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-
-                </div>
-                <div class="option-block">
-                    <i class="bi bi-globe icone"></i>
-                    <h2 class="name-plan">Espanhol Teens</h2>
-                    <p class="description-plan">Desenvolvimento das quatro habilidades linguísticas com foco na cultura
-                        hispânica e preparação para exames internacionais como DELE.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 10 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-                    <div class="price">
-                        <h3>R$ 200</h3>
-                        <p>/mês</p>
-                    </div>
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-                </div>
+               <div class="option-block">
+                  <i class="bi bi-mortarboard icone"></i>
+                  <h2 class="name-plan">Inglês Teens</h2>
+                  <p class="description-plan">Curso de inglês para adolescentes com foco em conversação, preparação
+                     para exames internacionais e desenvolvimento de habilidades para o futuro acadêmico e
+                     profissional.
+                  </p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 12 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 220</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
+               <div class="option-block">
+                  <i class="bi bi-globe icone"></i>
+                  <h2 class="name-plan">Espanhol Teens</h2>
+                  <p class="description-plan">Desenvolvimento das quatro habilidades linguísticas com foco na cultura
+                     hispânica e preparação para exames internacionais como DELE.
+                  </p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 10 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 200</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
             </div>
-
-
-
-        </div>
-    </section>
-
-    <section id="Adults" class="Adults secao ativa">
-        <div class="option-Adults">
+         </div>
+      </section>
+      <section id="adults" class="Adults secao ativa">
+         <div class="option-Adults">
             <h1>Adults (18+ anos)</h1>
             <p>Desenvolvimento profissional e pessoal</p>
             <div class="box">
-                <div class="option-block">
-                    <i class="bi bi-briefcase-fill icone"></i>
-                    <h2 class="name-plan">Inglês Business</h2>
-                    <p class="description-plan">Inglês para o ambiente corporativo com foco em apresentações, reuniões, negociações e comunicação profissional eficaz.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 6 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 12 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-
-                    <div class="price">
-                        <h3>R$ 280</h3>
-                        <p>/mês</p>
-                    </div>
-
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-
-                </div>
-                <div class="option-block">
-                    <i class="bi bi-airplane-fill icone"></i>
-                    <h2 class="name-plan">Inglês para Viagem</h2>
-                    <p class="description-plan">Curso prático para quem quer viajar e se comunicar com confiança em situações do dia a dia como aeroporto, hotel, restaurante e turismo.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 6 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-                    <div class="price">
-                        <h3>R$ 150</h3>
-                        <p>/mês</p>
-                    </div>
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-                </div>
-                <div class="option-block">
-                    <i class="bi bi-mortarboard icone"></i>
-                    <h2 class="name-plan">Inglês Acadêmico</h2>
-                    <p class="description-plan">Preparação para estudos no exterior, pós-graduação e pesquisa acadêmica com foco em leitura, escrita acadêmica e apresentações científicas.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 6 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 18 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>3 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-                    <div class="price">
-                        <h3>R$ 320</h3>
-                        <p>/mês</p>
-                    </div>
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-                </div>
+               <div class="option-block">
+                  <i class="bi bi-briefcase-fill icone"></i>
+                  <h2 class="name-plan">Inglês Business</h2>
+                  <p class="description-plan">Inglês para o ambiente corporativo com foco em apresentações, reuniões, negociações e comunicação profissional eficaz.</p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 6 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 12 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 280</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
+               <div class="option-block">
+                  <i class="bi bi-airplane-fill icone"></i>
+                  <h2 class="name-plan">Inglês para Viagem</h2>
+                  <p class="description-plan">Curso prático para quem quer viajar e se comunicar com confiança em situações do dia a dia como aeroporto, hotel, restaurante e turismo.</p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 6 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 150</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
+               <div class="option-block">
+                  <i class="bi bi-mortarboard icone"></i>
+                  <h2 class="name-plan">Inglês Acadêmico</h2>
+                  <p class="description-plan">Preparação para estudos no exterior, pós-graduação e pesquisa acadêmica com foco em leitura, escrita acadêmica e apresentações científicas.</p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 6 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 18 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>3 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 320</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
             </div>
-        </div>
-    </section>
-        <section id="Preparatorios" class="teens secao ativa">
-        <div class="option-teens">
+         </div>
+      </section>
+      <section id="preparatorios" class="teens secao ativa">
+         <div class="option-teens">
             <h1>Preparatórios</h1>
             <p>Preparação para o futuro com foco em conversação</p>
             <div class="box">
-                <div class="option-block">
-                    <i class="bi bi-mortarboard icone"></i>
-                    <h2 class="name-plan">Inglês Teens</h2>
-                    <p class="description-plan">Curso de inglês para adolescentes com foco em conversação, preparação
-                        para exames internacionais e desenvolvimento de habilidades para o futuro acadêmico e
-                        profissional.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 12 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-
-                    <div class="price">
-                        <h3>R$ 220</h3>
-                        <p>/mês</p>
-                    </div>
-
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-
-                </div>
-                <div class="option-block">
-                    <i class="bi bi-globe icone"></i>
-                    <h2 class="name-plan">Espanhol Teens</h2>
-                    <p class="description-plan">Desenvolvimento das quatro habilidades linguísticas com foco na cultura
-                        hispânica e preparação para exames internacionais como DELE.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 10 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-                    <div class="price">
-                        <h3>R$ 200</h3>
-                        <p>/mês</p>
-                    </div>
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-                </div>
+               <div class="option-block">
+                  <i class="bi bi-mortarboard icone"></i>
+                  <h2 class="name-plan">Inglês Teens</h2>
+                  <p class="description-plan">Curso de inglês para adolescentes com foco em conversação, preparação
+                     para exames internacionais e desenvolvimento de habilidades para o futuro acadêmico e
+                     profissional.
+                  </p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 12 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 220</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
+               <div class="option-block">
+                  <i class="bi bi-globe icone"></i>
+                  <h2 class="name-plan">Espanhol Teens</h2>
+                  <p class="description-plan">Desenvolvimento das quatro habilidades linguísticas com foco na cultura
+                     hispânica e preparação para exames internacionais como DELE.
+                  </p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 10 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 200</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
             </div>
-
-
-
-        </div>
-    </section>
-     <section id="Conversacao" class="Adults secao ativa">
-        <div class="option-Adults">
+         </div>
+      </section>
+      <section id="conversacao" class="Adults secao ativa">
+         <div class="option-Adults">
             <h1>Conversação</h1>
             <p>Desenvolvimento profissional e pessoal</p>
             <div class="box">
-                <div class="option-block">
-                    <i class="bi bi-briefcase-fill icone"></i>
-                    <h2 class="name-plan">Inglês Business</h2>
-                    <p class="description-plan">Inglês para o ambiente corporativo com foco em apresentações, reuniões, negociações e comunicação profissional eficaz.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 6 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 12 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-
-                    <div class="price">
-                        <h3>R$ 280</h3>
-                        <p>/mês</p>
-                    </div>
-
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-
-                </div>
-                <div class="option-block">
-                    <i class="bi bi-airplane-fill icone"></i>
-                    <h2 class="name-plan">Inglês para Viagem</h2>
-                    <p class="description-plan">Curso prático para quem quer viajar e se comunicar com confiança em situações do dia a dia como aeroporto, hotel, restaurante e turismo.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 6 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-                    <div class="price">
-                        <h3>R$ 150</h3>
-                        <p>/mês</p>
-                    </div>
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-                </div>
-                <div class="option-block">
-                    <i class="bi bi-mortarboard icone"></i>
-                    <h2 class="name-plan">Inglês Acadêmico</h2>
-                    <p class="description-plan">Preparação para estudos no exterior, pós-graduação e pesquisa acadêmica com foco em leitura, escrita acadêmica e apresentações científicas.</p>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 6 alunos por tumar</p>
-                        <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 18 meses</p>
-                    </div>
-                    <div class="characterist">
-                        <p class="topic1"><i class="bi bi-clock-history icone-char"></i>3 aulas por semana</p>
-                        <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
-                    </div>
-
-                    <div class="characterist2">
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
-                        </p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
-                        <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
-                    </div>
-                    <div class="price">
-                        <h3>R$ 320</h3>
-                        <p>/mês</p>
-                    </div>
-                    <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
-                </div>
+               <div class="option-block">
+                  <i class="bi bi-briefcase-fill icone"></i>
+                  <h2 class="name-plan">Inglês Business</h2>
+                  <p class="description-plan">Inglês para o ambiente corporativo com foco em apresentações, reuniões, negociações e comunicação profissional eficaz.</p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 6 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 12 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 280</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
+               <div class="option-block">
+                  <i class="bi bi-airplane-fill icone"></i>
+                  <h2 class="name-plan">Inglês para Viagem</h2>
+                  <p class="description-plan">Curso prático para quem quer viajar e se comunicar com confiança em situações do dia a dia como aeroporto, hotel, restaurante e turismo.</p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 8 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 6 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>2 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 150</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
+               <div class="option-block">
+                  <i class="bi bi-mortarboard icone"></i>
+                  <h2 class="name-plan">Inglês Acadêmico</h2>
+                  <p class="description-plan">Preparação para estudos no exterior, pós-graduação e pesquisa acadêmica com foco em leitura, escrita acadêmica e apresentações científicas.</p>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-people-fill icone-char"></i> Maximo 6 alunos por tumar</p>
+                     <p class="topic1"><i class="bi bi-calendar icone-char"></i>duração do curso 18 meses</p>
+                  </div>
+                  <div class="characterist">
+                     <p class="topic1"><i class="bi bi-clock-history icone-char"></i>3 aulas por semana</p>
+                     <p class="topic1"><i class="bi bi-journal-check icone-char"></i>Material exclusivo</p>
+                  </div>
+                  <div class="characterist2">
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Aulas interativas e divertidas</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Professores especializados em crianças
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Material didático colorido e atrativo
+                     </p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Acompanhamento pedagógico</p>
+                     <p class="topic1"><i class="bi bi-check2 icone-char"></i>Certificado de conclusão</p>
+                  </div>
+                  <div class="price">
+                     <h3>R$ 320</h3>
+                     <p>/mês</p>
+                  </div>
+                  <a href="contato.html"><button class="Matricula">Matricule-se</button></a>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section class="final">
-        <div class="final-conteiner">
+         </div>
+      </section>
+      <section class="final">
+         <div class="final-conteiner">
             <h1>Não encontrou o curso ideal?</h1>
             <p>Entre em contato conosco e criaremos um programa personalizado para suas <br> necessidades. </p>
             <div class="buttons">
-                <a href="contato.html"><button><i class="bi bi-telephone-fill"></i>Fale conosco</button></a>
-                <a href="planos-precos.html"><button><i class="bi bi-tags-fill"></i> Ver planos</button></a>
+               <a href="contato.html"><button><i class="bi bi-telephone-fill"></i>Fale conosco</button></a>
+               <a href="planos-precos.html"><button><i class="bi bi-tags-fill"></i> Ver planos</button></a>
             </div>
-        </div>
-    </section>
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="footer-logo">
-                    <img src="img/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo">
-                </div>
-                <p class="footer-description">
-                    Transformando vidas através do aprendizado de idiomas.
-                    Sua jornada para a fluência começa aqui.
-                </p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/people/CWBidiomas/61563368818904/?_rdr" class="social-link"
+         </div>
+      </section>
+<footer class="footer" id="footer">
+         <div class="container">
+            <div class="footer-content">
+               <div class="footer-section">
+                  <div class="footer-logo">
+                     <img src="img/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo" />
+                  </div>
+                  <p class="footer-description">
+                     Transformando vidas através do aprendizado de idiomas. Sua jornada
+                     para a fluência começa aqui.
+                  </p>
+                  <div class="social-links">
+                     <a target="_blank" href="https://www.facebook.com/people/CWBidiomas/61563368818904/?_rdr" class="social-link"
                         aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/cwbidiomas/" class="social-link" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Linktree">
-                        <i class="fa-brands fa-linktree"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-section">
-                <h3 class="footer-title">Navegação</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="metodologia.html">Metodologia</a></li>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                    <li><a href="planos.html">Planos</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3 class="footer-title">Cursos</h3>
-                <ul class="footer-links">
-                    <li><a href="cursos.html#kids">Kids (6-12 anos)</a></li>
-                    <li><a href="cursos.html#teens">Teens (13-17 anos)</a></li>
-                    <li><a href="cursos.html#adults">Adults (18+ anos)</a></li>
-                    <li><a href="cursos.html#preparatorios">Preparatórios</a></li>
-                    <li><a href="cursos.html#conversacao">Conversação</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3 class="footer-title">Contato</h3>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Rua João Palomeque, 128<br>Novo Mundo - Curitiba/PR</span>
-                    </div>
-                    <div class="contact-item">
+                     <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.instagram.com/cwbidiomas/" class="social-link" aria-label="Instagram">
+                     <i class="fab fa-instagram"></i>
+                     </a>
+                     <a target="_blank" href="#" class="social-link" aria-label="LinkedIn">
+                     <i class="fab fa-linkedin-in"></i>
+                     </a>
+                     <a target="_blank" href="https://linktr.ee/cwbidiomas" class="social-link" aria-label="Linktree">
+                     <i class="fa-brands fa-linktree"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="footer-section">
+                  <h3 class="footer-title">Navegação</h3>
+                  <ul class="footer-links">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="cursos.html">Cursos</a></li>
+                     <li><a href="metodologia.html">Metodologia</a></li>
+                     <li><a href="sobre.html">Sobre Nós</a></li>
+                     <li><a href="planos.html">Planos</a></li>
+                     <li><a href="eventos.html">Eventos</a></li>
+                     <li><a href="faq.html">FAQ</a></li>
+                     <li><a href="contato.html">Contato</a></li>
+                  </ul>
+               </div>
+               <div class="footer-section">
+                  <h3 class="footer-title">Cursos</h3>
+                  <ul class="footer-links">
+                     <li><a href="cursos.html#kids">Kids (6-12 anos)</a></li>
+                     <li><a href="cursos.html#teens">Teens (13-17 anos)</a></li>
+                     <li><a href="cursos.html#adults">Adults (18+ anos)</a></li>
+                     <li><a href="cursos.html#preparatorios">Preparatórios</a></li>
+                     <li><a href="cursos.html#conversacao">Conversação</a></li>
+                  </ul>
+               </div>
+               <div class="footer-section">
+                  <h3 class="footer-title">Contato</h3>
+                  <div class="contact-info">
+                     <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i><a target="_blank"
+                           href="https://maps.app.goo.gl/1Y9BDfzj1R5xSoHP7">Rua João Palomeque, 128<br />Novo Mundo- Curitiba/PR</a>
+                     </div>
+                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <a href="tel:5541991345683">(41)99134-5683</a>
-                    </div>
-                    <div class="contact-item">
+                        <a href="tel:5541991345683">(41) 99134-5683</a>
+                     </div>
+                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <a href="mailto:contato@cwbidiomas.com.br">contato@cwbidiomas.com.br</a>
-                    </div>
-                    <div class="contact-item">
+                     </div>
+                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
-                        <span>Seg - Sex: 9h às 21h<br>Sáb: 9h às 21h</span>
-                    </div>
-                </div>
+                        <span>Seg - Sex: 9h às 21h<br />Sáb: 9h às 21h</span>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <p>&copy; 2025 CWB Idiomas. Todos os direitos reservados.</p>
-                <div class="footer-bottom-links">
-                    <a href="politica-privacidade.html">Política de Privacidade</a>
-                    <a href="termos-de-uso.html">Termos de Uso</a>
-                </div>
+            <div class="footer-bottom">
+               <div class="footer-bottom-content">
+                  <p>&copy; 2025 CWB Idiomas. Todos os direitos reservados.</p>
+                  <div class="footer-bottom-links">
+                     <a href="politica-privacidade.html">Política de Privacidade</a>
+                     <a href="termos-de-uso.html">Termos de Uso</a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</footer>
-<a href="https://wa.me/5541991345683?text=Olá! Gostaria de saber mais sobre os cursos da CWB Idiomas."
-    class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-</a>
-</body>
+         </div>
+      </footer>
+      <a href="https://wa.me/5541991345683?text=Olá! Gostaria de saber mais sobre os cursos da CWB Idiomas."
+         class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      </a>
+   </body>
 </html>
