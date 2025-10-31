@@ -72,23 +72,19 @@ Sincronize sua feature com a develop (merge):
 
         git merge develop
 
-Resolva conflitos, se houver.
+Resolva conflitos, se houver, e faça commit se precisar.
 
-Commit se precisar.
+Agora vá até o GitHub e crie um Pull Request:
+Compare develop ← feature/tarefa-exemplo
 
-Finalize a feature:
-
-        git flow feature finish tarefa-exemplo
-
-Isso faz merge da feature na develop e apaga a branch local de feature.
-
+✅Agora todo mundo já consegue pegar suas alterações.
 ==========================================================================================
 
 6️⃣ Subir a develop atualizada para o GitHub
 
         git push origin develop
 
-✅Agora todo mundo já consegue pegar suas alterações.
+
 
 ###########################################################################################
 
@@ -175,3 +171,55 @@ Finalize a feature:
 Suba a develop atualizada para o GitHub:
 
         git push origin develop
+
+###########################################################################################
+
+CASO PROGRAME DIRETO NA DEVELOP (E QUEIRA ENVIAR PRA DEVELOP MESMO)
+
+==========================================================================================
+
+1️⃣ Garantir que sua develop local está atualizada
+
+Antes de começar ou enviar qualquer coisa, garanta que você tem a versão mais recente:
+
+        git checkout develop
+
+        git pull origin develop
+
+✅ Isso evita conflitos com o que já foi enviado por outras pessoas.
+
+==========================================================================================
+
+2️⃣ Verificar e commitar suas alterações
+
+Confirme que está na branch develop e veja se há arquivos modificados:
+
+        git status
+
+Se tiver arquivos alterados, adicione e faça o commit:
+
+        git add .
+        git commit -m "Descrição do que foi alterado"
+
+
+💡 Dica importante: faça commits claros e descritivos
+
+==========================================================================================
+
+3️⃣ Atualizar novamente antes de enviar (para evitar conflitos)
+
+Antes de subir suas alterações, é sempre bom garantir que ninguém enviou algo novo enquanto você estava programando:
+
+        git pull origin develop
+
+Se aparecerem conflitos, resolva-os, faça novo commit se necessário.
+
+==========================================================================================
+
+4️⃣ Enviar suas alterações para o GitHub
+
+Quando estiver tudo certo:
+
+        git push origin develop
+
+✅ Suas mudanças agora estão na develop do GitHub.
