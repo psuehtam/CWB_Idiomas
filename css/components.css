@@ -1,4 +1,4 @@
-/* ===== HEADER ===== */
+/* header */
 .header {
     position: fixed;
     top: 0;
@@ -23,13 +23,13 @@
     align-items: center;
 }
 
-.nav-logo .logo {
+.logo {
     height: 45px;
     width: auto;
     transition: transform 0.3s ease;
 }
 
-.nav-logo .logo:hover {
+.logo:hover {
     transform: scale(1.05);
 }
 
@@ -94,7 +94,7 @@
 }
 
 
-/* ===== FOOTER ===== */
+/* footer */
 .footer {
     background: var(--dark-bg);
     color: var(--white);
