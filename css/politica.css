@@ -1,0 +1,17 @@
+@import url(css/global.css);
+
+.hero{
+    background-color: var(--green-color);
+    padding: 120px 0px 80px;
+    margin-top: 70px;
+}
+
+.hero-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
