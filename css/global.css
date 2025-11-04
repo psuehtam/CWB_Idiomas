@@ -24,10 +24,12 @@ body {
     --green-color-light: #4dd4b8;      /* Verde claro */
     --yellow-color: #FFC428;    /* Amarelo */
     --magent-color: #EE1362;       /* Rosa/Magenta */
+    --magent-color-light: #ff4081; /* Rosa claro */
     --dark-bg: #17171C;            /* Fundo escuro */
     --white: #ffffff;
     --light-gray: #f8fafc;
     --gray: #64748b;
+    --grayline: #2d2d2d;
     --dark-gray: #334155;
     --text-dark: #1e293b;
     
