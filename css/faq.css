@@ -254,155 +254,73 @@ section.greenline {
     padding: 80px 0 80px;
 }
 
-/* ===== Cards grayline ===== */
+/* Perguntas Frequentes  ----------------------------------------------------------------*/
 
-.card {
-    width: 220px;
-    padding: 40px 20px;
-    border-radius: 15px;
-    background-color: var(--dark-bg);
-    display: flex;
-    flex-direction: column;
-    ;
-    justify-content: start;
-    align-items: center;
-    gap: 15px;
-    transition: 0.2s;
-    cursor: pointer;
+.perguntas-frequentes {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 10px 10px 10px #00000050;
-}
-
-.card .icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    background-color: var(--magent-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card .tittle {
-    color: var(--white);
-    text-align: center;
-}
-
-.card .info {
-    font-weight: 100;
-    font-size: 14px;
-    color: var(--white);
-    text-align: center;
-}
-
-.card .info p {
-    margin: 0;
-    padding: 0;
-}
-
-/* ===== FORMS Container ===== */
-
-.form-container {
+.perguntas-frequentes nav {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    color: var(--white);
-}
-
-.form-container .coluna {
-    width: 400px;
-    padding: 20px;
-    background-color: var(--grayline);
-    border-radius: 10px;
-    box-shadow: var(--shadow-md);
-    display: flex;
-    flex-direction: column;
-}
-
-.form-container .coluna span {
-    margin-top: 10px;
-    color: var(--light-gray);
-}
-
-.form-container .coluna span i{
-    margin-right: 10px;
-    color: var(--magent-color);
-}
-
-.form-container .tittle {
-    color: var(--white);
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.form-container .subtittle {
-    color: var(--light-gray);
-    text-align: center;
-    font-size: 14px;
-    font-weight: 100;
-    margin-bottom: 10px;
-}
-.form-container .linha {
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
     gap: 10px;
+    margin-bottom: 30px;
 }
-.form-container .linha .input-box{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.form-container .linha .input-box label{
-    font-size: 14px;
-}
-.form-container .linha .input-box .input{
-    width: 100%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid var(--dark-gray);
-    background: var(--dark-bg);
-    font-size: 14px;
-    color: var(--white);
-    outline: none;
-}
-.form-container .linha.termos {
-    width: 100%;
-    margin-top: 10px;
-    font-size: 14px;
-    color: var(--light-gray);
-    display: flex;
-    justify-content: center;
-    align-items: start;
-}
-.form-container .linha.termos p{
-    margin-bottom: 0;
-}
-.form-container .linha.termos input{
-    width: 15px;
-    height: 15px;
-    margin-top: 3px;
-}
-.form-container #btn-enviar {
-    width: 100%;
-    padding: 10px 30px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    background: var(--yellow-color);
-    color: var(--dark-bg);
+.perguntas-frequentes nav button {
+    background: none;
     border: none;
-    border-radius: 7px;
-    font-size: 16px;
+    outline: 2px solid var(--green-color);
+    padding: 10px 15px;
+    border-radius: 150px;
     cursor: pointer;
+    color: white;
+    font-weight: 600;
     transition: 0.2s;
-    gap: 10px;
+}
+.perguntas-frequentes nav button:hover {
+    background: var(--green-color);
+    color: var(--dark-bg);
+}
+.perguntas-frequentes nav button.active {
+    background: var(--green-color);
+    color: var(--dark-bg);
+}
+.perguntas-frequentes .card {
+    width: 100%;
+    color: white;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.perguntas-frequentes .card .pergunta {
+    position: relative;
+    background: var(--grayline);
+    border: 1px solid white;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 60 0;
+    margin-bottom: 0px;
+    z-index: 20;
+    cursor: pointer;
+}
+.perguntas-frequentes .card .resposta {
+    background: black;
+    border-radius: 0 0 10px 10px;
+    font-size: 14px;
+    color: white;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 20px;
+    transform: translateY(-10px);
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.perguntas-frequentes .card .resposta.active {
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* DUVIDAS ----------------------------------------------------------------*/
@@ -440,86 +358,6 @@ section.greenline {
     font-size: 14px;
     font-weight: 100;
     margin-bottom: 40px;
-}
-
-.section-perguntas .card {
-    width: 300px;
-    padding: 20px;
-    border-radius: 15px;
-    background-color: var(--dark-bg);
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 15px;
-    transition: 0.2s;
-}
-
-.section-perguntas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-.section-perguntas .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 10px 10px 10px #00000050;
-}
-
-.section-perguntas .card .pergunta {
-    color: var(--white);
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.section-perguntas .card p {
-    font-weight: 100;
-    font-size: 14px;
-    color: var(--white);
-    text-align: center;
-}
-
-.duvidas-container .ver-mais {
-    padding: 10px 20px;
-    margin-top: 30px;
-    background: none;
-    color: var(--yellow-color);
-    border-radius: 7px;
-    border: 1px solid var(--yellow-color);
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.duvidas-container .ver-mais:hover {
-    background: var(--yellow-color);
-    color: var(--grayline);
-    transform: translateY(-2px);
-    box-shadow: 10px 10px 10px #00000030;
-}
-.duvidas-container .ver-mais:hover b {
-    background: var(--grayline);
-    color: var(--yellow-color);
-}
-
-.duvidas-container .ver-mais b {
-    width: 25px;
-    height: 25px;
-    background: var(--yellow-color);
-    color: var(--grayline);
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.duvidas-container .ver-mais p {
-    margin: 0;
 }
 
 /* Responsta Rapida ----------------------------------------------------------- */
