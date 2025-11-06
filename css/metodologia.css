@@ -1,7 +1,7 @@
 @import url(global.css);
 
 .hero {
-    margin-top: 70px;
+    margin-top: 80px;
     width: 100%;
 }
 
@@ -10,18 +10,28 @@
     font-size: 25px;
     padding: 50px;
     text-align: center;
+    width: 100%;
+}
+
+.hero-container .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .hero-title h1 {
-    color: black;
-    font-size: 48px;
-    font-weight: 700;
+    color: var(--title);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
     margin-bottom: 1.5rem;
 }
 
 .hero-subtitle {
     font-size: 25px;
     margin-bottom: 2rem;
+    line-height: 1.5;
+    color: var(--subtitle);
 }
 
 .differential {
@@ -48,13 +58,18 @@
 }
 
 .differential-title {
-    color: var(--white);
+    color: var(--white-text);
     flex: 1;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
 }
 
 .differential p {
-    color: lightgray;
+    color: var(--gray-text);
+    font-size: 1.25rem;
+    line-height: 1.6;
     margin-bottom: 1.5rem;
 }
 
@@ -75,7 +90,7 @@
 }
 
 .pillars {
-    background-color: #333;
+    background-color: var(--gray-bg);
     padding: 80px 0;
 }
 
@@ -90,15 +105,17 @@
 }
 
 .pillars-header h2 {
-    color: var(--white);
-    font-size: 36px;
-    font-weight: 700;
+    color: var(--white-text);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 
 .pillars-header p {
-    color: lightgray;
-    font-size: 18px;
+    color: var(--gray-text);
+    font-size: 1.25rem;
+    line-height: 1.6;
     margin: 0 auto;
     max-width: 700px;
 }
@@ -135,26 +152,26 @@
 }
 
 .pillar-icon i {
-    color: var(--dark-bg);
+    color: var(--dark-text);
     font-size: 30px;
 }
 
 .pillar-card h3 {
-    color: var(--white);
+    color: var(--white-text);
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .pillar-card p {
-    color: lightgray;
+    color: var(--gray-text);
     font-size: 16px;
     line-height: 1.6;
 }
 
 .pillar-card li {
     align-items: center;
-    color: lightgray;
+    color: var(--gray-text);
     display: flex;
     gap: 0.5rem;
     list-style: none;
@@ -184,15 +201,17 @@
 }
 
 .process-header h2 {
-    color: var(--white);
-    font-size: 36px;
-    font-weight: 700;
+    color: var(--white-text);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 
 .process-header p {
-    color: lightgray;
-    font-size: 18px;
+    color: var(--gray-text);
+    font-size: 1.25rem;
+    line-height: 1.6;
     margin: 0 auto;
     max-width: 700px;
 }
@@ -220,10 +239,10 @@
 
 .process-step {
     align-items: flex-start;
-    background: #333;
+    background: var(--gray-bg);
     border-radius: 12px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    color: var(--white);
+    color: var(--text-white);
     display: flex;
     margin: 0 0 0 100px;
     padding:30px;
@@ -235,7 +254,7 @@
     background: var(--green-color);
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-    color: var(--dark-bg);
+    color: var(--dark-text);
     display: flex;
     font-size: 20px;
     font-weight: 700;
@@ -257,13 +276,13 @@
 }
 
 .step-content h3 {
-    color: var(--white);
+    color: var(--white-text);
     font-size: 25px;
     padding-bottom: 10px;
 }
 
 .step-content p {
-    color: lightgray;
+    color: var(--gray-text);
     font-size: 18px;
     padding-bottom: 10px;
 }
@@ -280,7 +299,7 @@
 
 .step-content li{
     margin: 0 20px 10px 0;
-    color: lightgray;
+    color: var(--gray-text);
 }
 
 .step-content li::marker{
@@ -289,7 +308,7 @@
 
 
 .innovative-materials {
-    background-color: #333;
+    background-color: var(--gray-bg);
     padding: 80px 0;
 }
 
@@ -304,14 +323,14 @@
 }
 
 .innovative-materials-header h2 {
-    color: var(--white);
+    color: var(--white-text);
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .innovative-materials-header p {
-    color: lightgray;
+    color: var(--gray-text);
     font-size: 18px;
     margin: 0 auto;
     max-width: 700px;
@@ -354,21 +373,21 @@
 }
 
 .innovative-materials-card h3 {
-    color: var(--white);
+    color: var(--white-text);
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .innovative-materials-card p {
-    color: lightgray;
+    color: var(--gray-text);
     font-size: 16px;
     line-height: 1.6;
 }
 
 .innovative-materials-card li {
     align-items: center;
-    color: lightgray;
+    color: var(--gray-text);
     display: flex;
     gap: 0.5rem;
     list-style: none;
