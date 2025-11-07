@@ -226,3 +226,146 @@
 .secao.ativa {
     display: block;
 }
+/* ===== RESPONSIVIDADE ===== */
+
+@media (max-width: 1024px) {
+    .hero-conteiner {
+        padding: 40px 20px;
+        font-size: 22px;
+    }
+    
+    .option-conteiner {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .box {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .option-block {
+        width: 90%;
+        max-width: 500px;
+    }
+    
+    .characterist {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .final-conteiner {
+        padding: 60px 20px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-conteiner {
+        padding: 30px 15px;
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    
+    .hero-conteiner h1 {
+        font-size: 32px;
+    }
+    
+    .hero-conteiner p br {
+        display: none;
+    }
+    
+    .option-conteiner {
+        padding: 15px;
+        gap: 8px;
+    }
+    
+    .classification {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .option-kids,
+    .option-teens,
+    .option-Adults {
+        padding-top: 50px;
+    }
+    
+    .option-kids h2,
+    .option-teens h2,
+    .option-Adults h2 {
+        font-size: 28px;
+    }
+    
+    .box {
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .option-block {
+        width: 95%;
+        padding: 15px;
+        margin-bottom: 40px;
+    }
+    
+    .option-block h2 {
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    .description-plan {
+        font-size: 14px;
+    }
+    
+    .characterist {
+        padding: 0 15px 15px 15px;
+    }
+    
+    .characterist2 {
+        padding: 0 15px;
+    }
+    
+    .topic1 {
+        font-size: 14px;
+    }
+    
+    .price h3 {
+        font-size: 24px;
+    }
+    
+    .Matricula {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    
+    .final-conteiner {
+        padding: 50px 15px;
+        font-size: 20px;
+    }
+    
+    .final-conteiner h2 {
+        font-size: 28px;
+    }
+    
+    .final-conteiner p br {
+        display: none;
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .final-conteiner button {
+        padding: 15px 25px;
+        font-size: 14px;
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
