@@ -79,15 +79,6 @@
     transition: all 0.3s ease;
     transform: translateY(-2px);
 }
-#hero-img {
-    opacity: 1;
-    transition: opacity 0.8s ease-in-out;
-}
-
-#hero-img.fade {
-    opacity: 0;
-}
-
 
 .cursos {
     align-items: center;
@@ -279,7 +270,13 @@
     height: auto;
     background-color: #333;
 }
-.active{
+
+.opinion-cards p{
+    color: var(--magent-color);
+}
+
+
+.active3{
     display: block;
 }
 
