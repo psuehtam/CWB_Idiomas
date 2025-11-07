@@ -13,22 +13,40 @@ html {
 body {
     font-family: "Rubik", sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--gray-bg);
     overflow-x: hidden;
 }
 
 :root {
+    /* Paleta de Cores */
     --green-color: #30C5A1;      /* Verde principal */
     --green-color-dark: #26a085;       /* Verde escuro */
     --green-color-light: #4dd4b8;      /* Verde claro */
     --yellow-color: #FFC428;    /* Amarelo */
     --magent-color: #EE1362;       /* Rosa/Magenta */
     --magent-color-light: #ff4081; /* Rosa claro */
-    --dark-bg: #17171C;            /* Fundo escuro */
+
+    --dark-bg: #17171C;/* Fundo escuro */
+    --gray-bg: #333333; /* Fundo cinza */
+
+
+    --title: #17171C;
+    --subtitle: #333333;
+    
+    --white-text: #ffffff;
+    --gray-text: #d3d3d3;
+    --medium-gray-text:#94a3b8;
+    --dark-gray-text: #575757;
+    --dark-text: #17171C;
+
+    --grayline: #707070;
+    --whiteline: #f8fafc;
+
+
+
     --white: #ffffff;
     --light-gray: #f8fafc;
     --gray: #64748b;
-    --grayline: #2d2d2d;
     --dark-gray: #334155;
     --text-dark: #1e293b;
     
@@ -36,4 +54,48 @@ body {
     --gradient-primary: linear-gradient(135deg, #30C5A1 0%, #4dd4b8 100%);
     --gradient-secondary: linear-gradient(135deg, #FFC428 0%, #f59e0b 100%);
     --gradient-accent: linear-gradient(135deg, #EE1362 0%, #ff4081 100%);
+
+     /* Sombras */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Tipografia */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+/* - Título principal - Usado uma vez por página, representa o assunto mais importante. ex: titulo da pagina no topo */
+h1 {
+    font-size: 3rem;
+    color: var(--title-color);
+}
+
+/* - Subtítulo - Divide o conteúdo principal em seções. Ex: Nossos cursos, pq escolher a cwb */
+h2 {
+    font-size: 2.5rem;
+}
+
+/* - Sub-subtítulo - Divide uma seção (<h2>) em partes menores. ex: Titulo  de um Card */
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
