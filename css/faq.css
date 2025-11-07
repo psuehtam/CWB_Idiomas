@@ -1,62 +1,11 @@
 @import url('global.css');
 
+/* laptop acima de 1920px
+tablet abaixo de 768px
+mobile abaixo de 390px */
+
 .highlight {
     color: var(--yellow-color);
-}
-
-/* ===== BOTÕES ===== */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
-}
-
-.btn-primary {
-    background: var(--yellow-color);
-    color: black;
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-}
-
-.btn-secondary {
-    background: black;
-    color: var(--magent-color);
-    border: solid 1px var(--magent-color);
-}
-
-.btn-secondary:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-}
-
-.btn-outline {
-    background: transparent;
-    color: var(--yellow-color);
-    border: 2px solid var(--yellow-color);
-}
-
-.btn-outline:hover {
-    background: var(--yellow-color);
-    color: var(--white);
-    transform: translateY(-2px);
-}
-
-.btn-large {
-    padding: 16px 32px;
-    font-size: 1.1rem;
 }
 
 /* ===== Banner SECTION ===== */
@@ -276,4 +225,23 @@ section.greenline {
     background: var(--magent-color-light);
     transform: translateY(-2px);
     box-shadow: 10px 10px 10px #00000030;
+}
+
+@media (max-width: 590px) {
+    .perguntas-frequentes nav {
+        flex-wrap: wrap;
+    }
+    .container-resposta-rapida .canais {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 390px) {
+    .banner {
+        padding: 30px 10px;
+    }
+    .container-resposta-rapida {
+        padding: 0px 10px;
+    }
 }

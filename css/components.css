@@ -167,7 +167,7 @@
 }
 
 .footer-links a {
-    color:var(--medium-gray-text);
+    color: var(--medium-gray-text);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -261,12 +261,14 @@
     box-shadow: var(--shadow-xl);
     transform: scale(1.1);
 }
-.whatsapp-button::before, .whatsapp-button::after {
+
+.whatsapp-button::before,
+.whatsapp-button::after {
     animation: animar 1.5s linear infinite;
     border-radius: 50%;
-    border: 1px solid  #25D366;
+    border: 1px solid #25D366;
     bottom: -60px;
-    content:'';
+    content: '';
     display: block;
     left: -60px;
     opacity: 0;
@@ -274,21 +276,112 @@
     right: -60px;
     top: -60px;
 }
-.whatsapp-button::after{
+
+.whatsapp-button::after {
     animation-delay: 0.5s;
 }
 
-@keyframes animar{
-    0%{
+@keyframes animar {
+    0% {
         transform: scale(0.2);
         opacity: 0;
     }
-    50%{
+
+    50% {
 
         opacity: 1;
     }
-    100%{
+
+    100% {
         transform: scale(0.5);
         opacity: 0;
+    }
+}
+
+/* Responsividade */
+
+.btn-open-menu {
+    background: none;
+    border: none;
+    color: var(--green-color);
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.btn-close-menu {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    color: var(--green-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menu-hamburg {
+    width: 100%;
+    display: none;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+}
+
+.menu-hamburg.open {
+    display: flex;
+    right: 0;
+    background-color: #000000AA;
+}
+
+.menu-hamburg .menu-list {
+    width: 0px;
+    height: 100vh;
+    padding: 20px 0px;
+    background-color: var(--dark-bg);
+    border-left: 1px solid var(--grayline);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    transition: 0.4s;
+}
+
+.menu-hamburg .menu-list.open {
+    width: 250px;
+}
+
+.menu-hamburg .menu-list .menu-item {
+    padding: 10px 20px;
+    margin: 2px auto;
+    width: 90%;
+    border-radius: 8px;
+    background-color: black;
+    list-style: none;
+}
+
+.menu-hamburg .menu-list .menu-item:hover {
+    background-color: var(--magent-color);
+}
+
+.menu-hamburg .menu-list .menu-item.active {
+    background-color: var(--magent-color) !important;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+    }
+
+    .btn-open-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 391px) {
+    .menu-hamburg .menu-list.open {
+        width: 90%;
     }
 }

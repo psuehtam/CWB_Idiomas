@@ -29,3 +29,22 @@ if (header) {
         }
     });
 }
+
+
+
+// Menu hamburg
+
+const menuOpen = document.querySelector('.btn-open-menu');
+const menuClose = document.querySelector('.btn-close-menu');
+const menu = document.querySelector('.menu-hamburg');
+const menuList = document.querySelector('.menu-list');
+
+menuOpen.addEventListener('click', () => {
+    menu.classList.add('open');
+    setTimeout(() => menuList.classList.add('open'), 100);
+});
+
+menuClose.addEventListener('click', () => {
+    menu.classList.remove('open');
+    setTimeout(() => menuList.classList.remove('open'), 100);
+});
