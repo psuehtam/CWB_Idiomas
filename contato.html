@@ -24,50 +24,88 @@
 
 <body>
     <!-- Header -->
-   <header class="header" id="header">
-         <nav class="navbar">
+    <header class="header" id="header">
+        <nav class="navbar">
             <div class="nav-container">
-               <div class="nav-logo">
-                  <a href="index.html">
-                  <img src="img/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo">
-                  </a>
-               </div>
-               <div class="nav-menu" id="nav-menu">
-                  <ul class="nav-list">
-                     <li class="nav-item">
-                        <a href="index.html" class="nav-link ">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="cursos.html" class="nav-link ">Cursos</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="metodologia.html" class="nav-link ">Metodologia</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="sobre.html" class="nav-link">Sobre Nós</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="planos.html" class="nav-link">Planos</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="eventos.html" class="nav-link">Eventos</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="faq.html" class="nav-link">FAQ</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="contato.html" class="nav-link active">Contato</a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="nav-toggle" id="nav-toggle">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-               </div>
-            </div>
-         </nav>
-      </header>
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="img/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo">
+                    </a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link ">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cursos.html" class="nav-link ">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="metodologia.html" class="nav-link active">Metodologia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="planos.html" class="nav-link">Planos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="eventos.html" class="nav-link">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faq.html" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <!-- Responsividade -->
+                <button class="btn-open-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <nav class="menu-hamburg">
+                    <ul class="menu-list">
+                        <button class="btn-close-menu">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <li class="menu-item  active">
+                            <a href="index.html" class="nav-link ">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="cursos.html" class="nav-link ">Cursos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="metodologia.html" class="nav-link">Metodologia</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="sobre.html" class="nav-link">Sobre Nós</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="planos.html" class="nav-link">Planos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="eventos.html" class="nav-link">Eventos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="faq.html" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Fim da responsividade -->
+        </nav>
+        </div>
+        </nav>
+    </header>
 
     <!-- Banner Section -->
     <section class="banner">
@@ -78,7 +116,7 @@
     </section>
 
     <!-- Canais de Contato -->
-    <section class="grayline">
+    <section class="grayline canais-contato">
         <div class="card">
             <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30px" height="30px">
@@ -187,7 +225,8 @@
                 <div class="linha">
                     <div class="input-box">
                         <label for="mensagem">Mensagem: </label>
-                        <textarea class="input" name="mensagem" id="mensagem" style="resize: vertical;" rows="10" placeholder="Conte-nos como podemos ajudar você..."></textarea>
+                        <textarea class="input" name="mensagem" id="mensagem" style="resize: vertical;" rows="10"
+                            placeholder="Conte-nos como podemos ajudar você..."></textarea>
                     </div>
                 </div>
                 <div class="linha termos">
@@ -208,7 +247,10 @@
                 <p class="subtittle">
                     Estamos no centro de Curitiba, Com facil acesso por transporte público e estacionamento próximo.
                 </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.690826152514!2d-49.29667992460879!3d-25.481997277528695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce30028665813%3A0xdc7963f989254f76!2sCWB%20Idiomas%20-%20Escola%20de%20Ingl%C3%AAs!5e0!3m2!1spt-BR!2sbr!4v1762260768062!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.690826152514!2d-49.29667992460879!3d-25.481997277528695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce30028665813%3A0xdc7963f989254f76!2sCWB%20Idiomas%20-%20Escola%20de%20Ingl%C3%AAs!5e0!3m2!1spt-BR!2sbr!4v1762260768062!5m2!1spt-BR!2sbr"
+                    width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <span><i class="fa-solid fa-bus-simple"></i>Várias linhas de onibus Próximas</span>
                 <span><i class="fa-solid fa-parking"></i>Várias linhas de onibus Próximas</span>
             </div>
