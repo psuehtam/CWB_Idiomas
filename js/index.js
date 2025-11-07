@@ -4,36 +4,39 @@ const dots = document.querySelectorAll(".dot");
 const btnPrev = document.getElementById("opinion-prev");
 const btnNext = document.getElementById("opinion-next");
 
-let opinionIndex = 0;
+if (cards.length && dots.length && btnPrev && btnNext) {
+    let opinionIndex = 0;
 
-function updateSlider() {
-    cards.forEach(card => card.classList.remove("active3"));
-    dots.forEach(dot => dot.classList.remove("active"));
+    function updateSlider() {
+        cards.forEach(card => card.classList.remove("active3"));
+        dots.forEach(dot => dot.classList.remove("active"));
 
-    cards[opinionIndex].classList.add("active3");
-    dots[opinionIndex].classList.add("active");
-}
+        cards[opinionIndex].classList.add("active3");
+        dots[opinionIndex].classList.add("active");
 
-btnNext.addEventListener("click", () => {
-    opinionIndex++;
-    if (opinionIndex > cards.length - 1) opinionIndex = 0;
-    updateSlider();
-});
+    }
 
-btnPrev.addEventListener("click", () => {
-    opinionIndex--;
-    if (opinionIndex < 0) opinionIndex = cards.length - 1;
-    updateSlider();
-});
-
-dots.forEach(dot => {
-    dot.addEventListener("click", () => {
-        opinionIndex = Number(dot.getAttribute("data-slide"));
+    btnNext.addEventListener("click", () => {
+        opinionIndex++;
+        if (opinionIndex > cards.length - 1) opinionIndex = 0;
         updateSlider();
     });
-});
 
-const heroImg = document.getElementById("hero-img");
+    btnPrev.addEventListener("click", () => {
+        opinionIndex--;
+        if (opinionIndex < 0) opinionIndex = cards.length - 1;
+        updateSlider();
+    });
+
+    dots.forEach(dot => {
+        dot.addEventListener("click", () => {
+            opinionIndex = Number(dot.getAttribute("data-slide"));
+            updateSlider();
+        });
+    });
+}
+
+const heroImg = document.querySelector(".img-hero img");
 
 const imagens = [
     "img/CWB Idiomas-C0.jpg",
@@ -42,19 +45,20 @@ const imagens = [
     "img/CWB Idiomas-alunos.jpg"
 ];
 
-let heroIndex = 0;
+if (heroImg) {
+    let heroIndex = 0;
 
-function trocarImagem() {
-    heroImg.classList.add("fade");
+    function trocarImagem() {
+        heroImg.classList.add("fade");
 
-    setTimeout(() => {
-        heroIndex++;
-        if (heroIndex >= imagens.length) heroIndex = 0;
+        setTimeout(() => {
+            heroIndex++;
+            if (heroIndex >= imagens.length) heroIndex = 0;
 
-        heroImg.src = imagens[heroIndex];
-        heroImg.classList.remove("fade");
-    }, 400);
+            heroImg.src = imagens[heroIndex];
+            heroImg.classList.remove("fade");
+        }, 400);
+    }
+
+    setInterval(trocarImagem, 4000);
 }
-
-
-setInterval(trocarImagem, 4000);
