@@ -256,7 +256,7 @@ section.greenline {
 }
 
 .section-perguntas .card {
-    width: 300px;
+    width: 100%;
     padding: 20px;
     border-radius: 15px;
     background-color: var(--dark-bg);
@@ -270,7 +270,7 @@ section.greenline {
 
 .section-perguntas {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
@@ -300,6 +300,7 @@ section.greenline {
     color: var(--yellow-color);
     border-radius: 7px;
     border: 1px solid var(--yellow-color);
+    outline: none;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -334,6 +335,50 @@ section.greenline {
 
 .duvidas-container .ver-mais p {
     margin: 0;
+}
+
+.duvidas-container .container-ver-mais {
+    margin-top: 20px;
+    display: none;
+    transition: 0.3s;
+}
+
+.duvidas-container .container-ver-mais.ativo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.duvidas-container .container-ver-mais .card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--dark-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    transition: 0.2s;
+}
+
+.duvidas-container .container-ver-mais .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px #00000050;
+}
+
+.duvidas-container .container-ver-mais .card .pergunta {
+    color: var(--white-text);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.duvidas-container .container-ver-mais .card p {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray-text);
+    text-align: center;
 }
 
 
@@ -427,6 +472,20 @@ section.greenline {
         justify-content: center;
         flex-wrap: wrap;
     }
+    .duvidas-container .section-perguntas {
+        padding: 0px 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .duvidas-container .container-ver-mais.ativo {
+        padding: 0px 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -434,6 +493,10 @@ section.greenline {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .duvidas-container .container-ver-mais {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
