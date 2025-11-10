@@ -1,14 +1,10 @@
 @import url('global.css');
 
-/* laptop acima de 1920px
-tablet abaixo de 768px
-mobile abaixo de 390px */
-
 .highlight {
     color: var(--yellow-color);
 }
 
-/* ===== Banner SECTION ===== */
+/* Banner ----------------------------------------------------------------*/
 .banner {
     background-color: var(--green-color);
     padding: 70px;
@@ -36,7 +32,7 @@ mobile abaixo de 390px */
     margin-bottom: 2rem;
 }
 
-/* ===== SEÇÕES GERAIS ===== */
+/* Section Predefinida ----------------------------------------------------------------*/
 section {
     padding: 80px 0;
 }
