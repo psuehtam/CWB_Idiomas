@@ -1,10 +1,10 @@
 @import url('global.css');
 
-.hero {
+.banner {
     margin-top: 80px;
 }
 
-.hero-conteiner {
+.banner-conteiner {
     background-color: var(--green-color);
     color: var(--title);
     font-size: 25px;
@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.hero-conteiner p {
+.banner-conteiner p {
     color: var(--subtitle);
 }
 
@@ -229,7 +229,7 @@
 /* ===== RESPONSIVIDADE ===== */
 
 @media (max-width: 1024px) {
-    .hero-conteiner {
+    .banner-conteiner {
         padding: 40px 20px;
         font-size: 22px;
     }
@@ -264,17 +264,17 @@
 }
 
 @media (max-width: 600px) {
-    .hero-conteiner {
+    .banner-conteiner {
         padding: 30px 15px;
         font-size: 20px;
         margin-top: 60px;
     }
     
-    .hero-conteiner h1 {
+    .banner-conteiner h1 {
         font-size: 32px;
     }
     
-    .hero-conteiner p br {
+    .banner-conteiner p br {
         display: none;
     }
     

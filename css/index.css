@@ -1,6 +1,6 @@
 @import url('global.css');
 
-.hero {
+.banner {
     display: flex;
     margin-top: 80px;
     background-color: var(--green-color);
@@ -23,7 +23,7 @@
     color: var(--white-text);
 }
 
-.img-hero {
+.img-banner {
     width: 35%;
     height: auto;
     display: flex;
@@ -31,7 +31,7 @@
     align-items: center;
 }
 
-.img-hero img {
+.img-banner img {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
@@ -39,11 +39,11 @@
     transition: opacity 0.4s ease-in-out;
 }
 
-.img-hero img.fade {
+.img-banner img.fade {
     opacity: 0;
 }
 
-.buttons-hero {
+.buttons-banner {
     display: flex;
     gap: 15px;
     margin-top: 30px;
@@ -429,7 +429,7 @@
 /* ===== RESPONSIVIDADE ===== */
 
 @media screen and (max-width: 1024px) {
-    .hero {
+    .banner {
         flex-direction: column;
         text-align: center;
         gap: 40px;
@@ -440,16 +440,16 @@
         font-size: 48px;
     }
     
-    .img-hero {
+    .img-banner {
         width: 80%;
     }
     
-    .img-hero img {
+    .img-banner img {
         height: 300px;
         object-fit: cover;
     }
     
-    .buttons-hero {
+    .buttons-banner {
         justify-content: center;
     }
     
@@ -495,7 +495,7 @@
 }
 
 @media (max-width: 600px) {
-    .hero {
+    .banner {
         padding: 40px 15px;
     }
     
@@ -508,11 +508,11 @@
         display: none;
     }
     
-    .img-hero {
+    .img-banner {
         width: 95%;
     }
     
-    .img-hero img {
+    .img-banner img {
         height: 220px;
     }
     
