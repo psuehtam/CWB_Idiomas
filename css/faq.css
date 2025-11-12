@@ -223,15 +223,6 @@ section.greenline {
     box-shadow: 10px 10px 10px #00000030;
 }
 
-@media (max-width: 590px) {
-    .perguntas-frequentes nav {
-        flex-wrap: wrap;
-    }
-    .container-resposta-rapida .canais {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
 
 @media (max-width: 390px) {
     .banner {
@@ -239,5 +230,15 @@ section.greenline {
     }
     .container-resposta-rapida {
         padding: 0px 10px;
+    }
+}
+
+@media (max-width: 590px) {
+    .perguntas-frequentes nav {
+        flex-wrap: wrap;
+    }
+    .container-resposta-rapida .canais {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
