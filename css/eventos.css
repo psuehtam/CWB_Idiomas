@@ -1,75 +1,33 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background: #0c0c0c;
+  background: var(--dark-bg);
   color: #fff;
-  font-family: 'Poppins', sans-serif;
-}
 
-.header {
-  background: #000;
-  padding: 1.2rem 0;
-}
-
-.header .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.logo span {
-  color: #ffd700;
-}
-
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 1.5rem;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.nav a:hover,
-.nav a.active {
-  color: #00e0c6;
 }
 
 .hero {
-  background: #00e0c6;
+  margin-top: 80px;
+  background-color: var(--green-color);
+  color: var(--title);
+  font-size: 25px;
+  padding: 50px;
   text-align: center;
-  padding: 4rem 1rem;
-  color: #000;
 }
 
-.hero h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
 
 .hero p {
-  font-weight: 500;
-  margin-top: 0.5rem;
-  line-height: 1.6;
+  color: var(--subtitle);
 }
 
-.eventos, .eventos-passados, .tipos-eventos {
+.eventos,
+.eventos-passados,
+.tipos-eventos {
   text-align: center;
   padding: 4rem 1rem;
 }
 
-.eventos h2, .eventos-passados h2, .tipos-eventos h2 {
+.eventos h2,
+.eventos-passados h2,
+.tipos-eventos h2 {
   font-size: 1.9rem;
   font-weight: 700;
 }
@@ -184,6 +142,7 @@ button:hover {
   color: #fff;
 }
 
+
 .tipos-cards {
   display: flex;
   justify-content: center;
@@ -234,45 +193,60 @@ button:hover {
 }
 
 .botao-primario {
-  background: #000;
-  color: #fff;
+    background-color: var(--dark-bg);
+    border-radius: 8px;
+    border: none;
+    border: solid 2px var(--magent-color);
+    color: var(--green-color);
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 25px 40px;
+    transition: 0.3s ease;
+}
+.botao-primario:hover {
+    background-color: var(--yellow-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: var(--dark-bg);
+    transform: translateY(-3px);
+    transition: 0.3s ease;
 }
 
 .botao-secundario {
-  background: transparent;
-  border: 2px solid #000;
-  color: #000;
+    background-color: var(--dark-bg);
+    border-radius: 8px;
+    border: none;
+    border: solid 2px var(--magent-color);
+    color: var(--green-color);
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 25px 40px;
+    transition: 0.3s ease;
+}
+.botao-secundario:hover {
+    background-color: var(--yellow-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: var(--dark-bg);
+    transform: translateY(-3px);
+    transition: 0.3s ease;
 }
 
-.footer {
-  background: #000;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-}
 
-.footer .social a {
-  color: #00e0c6;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
-
-.footer .contato {
-  margin-top: 1rem;
-  color: #777;
-}
 
 @media (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-  .cards, .tipos-cards {
+
+  .cards,
+  .tipos-cards {
     flex-direction: column;
     align-items: center;
   }
-  .card, .tipo-card {
+
+  .card,
+  .tipo-card {
     width: 90%;
   }
+
   .botoes {
     flex-direction: column;
   }
