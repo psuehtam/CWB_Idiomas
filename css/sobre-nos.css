@@ -1,4 +1,4 @@
-@import url(global.css);
+@import url("global.css");
 
 /* === SEÇÃO PRINCIPAL === */
 body {
@@ -12,24 +12,16 @@ body {
 /* === CABEÇALHO === */
 .section-header {
     margin-top: 80px;
-    background-color: #2ae4a0;
+    background-color: var(--green-color);
+    color: var(--title);
+    font-size: 25px;
+    padding: 50px;
     text-align: center;
-    padding: 4rem 1rem 3rem;
-}
-
-.section-header h1 {
-    color: #111;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
 }
 
 .section-header p {
-    color: #111;
-    font-size: 1rem;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.5;
+    color: var(--subtitle);
+    font-size: 20px;
 }
 
 /* === HISTÓRIA === */
