@@ -136,7 +136,7 @@
     color: var(--green-color);
 }
 
-.contact-info {
+.contact-info1 {
     background-color: var(--dark-bg);
     padding: 1rem;
     border-radius: 5px;
@@ -147,6 +147,10 @@
 .contact-info p {
     margin-bottom: 0.5rem;
     color: var(--gray-text);
+}
+
+.footer{
+    border-top: solid 1px var(--grayline);
 }
 
 /* Responsividade */
