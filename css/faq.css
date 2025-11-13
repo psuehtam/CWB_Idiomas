@@ -4,6 +4,30 @@
     color: var(--yellow-color);
 }
 
+/* Section Predefinida ----------------------------------------------------------------*/
+
+section {
+    padding: 80px 0;
+}
+
+section.grayline {
+    background-color: var(--gray-bg);
+    padding: 80px 0 80px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+section.blackline {
+    background-color: var(--dark-bg);
+    padding: 80px 0 80px;
+}
+
+section.greenline {
+    background-color: var(--green-color);
+    padding: 80px 0 80px;
+}
+
 /* Banner ----------------------------------------------------------------*/
 .banner {
     background-color: var(--green-color);
@@ -30,29 +54,6 @@
     color: var(--subtitle);
     font-size: 20px;
     margin-bottom: 2rem;
-}
-
-/* Section Predefinida ----------------------------------------------------------------*/
-section {
-    padding: 80px 0;
-}
-
-section.grayline {
-    background-color: var(--gray-bg);
-    padding: 80px 0 80px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-section.blackline {
-    background-color: var(--dark-bg);
-    padding: 80px 0 80px;
-}
-
-section.greenline {
-    background-color: var(--green-color);
-    padding: 80px 0 80px;
 }
 
 /* Perguntas Frequentes  ----------------------------------------------------------------*/
@@ -124,7 +125,7 @@ section.greenline {
     padding-bottom: 20px;
 }
 
-/* DUVIDAS ----------------------------------------------------------------*/
+/* campo de duvidas ----------------------------------------------------------------*/
 
 .duvidas-container {
     display: flex;
