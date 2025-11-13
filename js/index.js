@@ -36,28 +36,3 @@ if (cards.length && dots.length && btnPrev && btnNext) {
     });
 }
 
-const heroImg = document.querySelector(".img-hero img");
-
-const imagens = [
-    "img/banner/CWB-Idiomas-0118.jpg",
-    "img/banner/CWB-Idiomas-0053.jpg",
-    "img/banner/CWB-Idiomas-0023.jpg",
-];
-
-if (heroImg) {
-    let heroIndex = 0;
-
-    function trocarImagem() {
-        heroImg.classList.add("fade");
-
-        setTimeout(() => {
-            heroIndex++;
-            if (heroIndex >= imagens.length) heroIndex = 0;
-
-            heroImg.src = imagens[heroIndex];
-            heroImg.classList.remove("fade");
-        }, 350);
-    }
-
-    setInterval(trocarImagem, 3500);
-}

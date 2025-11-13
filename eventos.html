@@ -1,146 +1,289 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CWB Idiomas</title>
-   <meta name="description" content="Participe dos eventos da CWB Idiomas! Imersões culturais, workshops e atividades especiais para praticar idiomas de forma divertida." />
-    <link rel="icon" href="img/icone-cwb-padrao.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/components.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos | CWB Idiomas</title>
+  <link rel="icon" href="img/icone-cwb-padrao.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/eventos.css">
 </head>
 <body>
-<header class="header" id="header">
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">
-                    <img src="img/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo">
-                </a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link ">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="cursos.html" class="nav-link">Cursos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="metodologia.html" class="nav-link">Metodologia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="sobre.html" class="nav-link">Sobre Nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="planos.html" class="nav-link">Planos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="eventos.html" class="nav-link active">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="faq.html" class="nav-link">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contato.html" class="nav-link">Contato</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+   <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="img/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo">
+                    </a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link ">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cursos.html" class="nav-link ">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="metodologia.html" class="nav-link">Metodologia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre-nos.html" class="nav-link">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="eventos.html" class="nav-link active">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faq.html" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <!-- Responsividade -->
+                <button class="btn-open-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <nav class="menu-hamburg">
+                    <ul class="menu-list">
+                        <button class="btn-close-menu">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <li class="menu-item">
+                            <a href="index.html" class="nav-link ">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="cursos.html" class="nav-link ">Cursos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="metodologia.html" class="nav-link">Metodologia</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="sobre-nos.html" class="nav-link">Sobre Nós</a>
+                        </li>
+                        <li class="menu-item active">
+                            <a href="eventos.html" class="nav-link">Eventos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="faq.html" class="nav-link">FAQ</a>
+                        </li> 
+                        <li class="menu-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Fim da responsividade -->
+        </nav>
         </div>
-    </nav>
-</header>
-<footer class="footer" id="footer">
-         <div class="container">
+        </nav>
+    </header>
+
+  <section class="hero">
+    <h1>Nossos Eventos</h1>
+    <p>Momentos especiais para praticar idiomas e se conectar<br>com a comunidade CWB Idiomas</p>
+  </section>
+
+  <section class="eventos">
+    <h2>Próximos Eventos</h2>
+    <p>Não perca as oportunidades de praticar e se divertir</p>
+
+    <div class="cards">
+      <div class="card destaque">
+        <div class="badge">Em breve</div>
+        <div class="date"><span class="day">15</span><span class="month">DEZ</span></div>
+        <h3>English Day 2024</h3>
+        <p>Um dia inteiro de atividades em inglês com workshops, apresentações, jogos e muito mais. Venha praticar seu inglês de forma divertida!</p>
+        <ul>
+          <li>9h às 17h</li>
+          <li>Auditório Principal</li>
+          <li>Gratuito para alunos</li>
+        </ul>
+        <button>Inscrever-se</button>
+      </div>
+
+      <div class="card">
+        <div class="date"><span class="day">31</span><span class="month">OUT</span></div>
+        <h3>Halloween Party</h3>
+        <p>Festa de Halloween com atividades temáticas, concurso de fantasias e muito terror em inglês!</p>
+        <ul>
+          <li>18h às 22h</li>
+          <li>Pátio da Escola</li>
+          <li>R$ 25,00</li>
+        </ul>
+        <button>Inscrever-se</button>
+      </div>
+
+      <div class="card">
+        <div class="date"><span class="day">22</span><span class="month">NOV</span></div>
+        <h3>Conversation Café</h3>
+        <p>Café da manhã com conversação em inglês e espanhol. Um ambiente descontraído para praticar idiomas.</p>
+        <ul>
+          <li>8h às 10h</li>
+          <li>Café da Escola</li>
+          <li>R$ 15,00</li>
+        </ul>
+        <button>Inscrever-se</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="eventos-passados">
+    <h2>Eventos Passados</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="date"><span class="day">12</span><span class="month">ABR</span></div>
+        <h3>Workshop de Conversação</h3>
+        <p>Encontro para praticar conversação com professores e convidados especiais.</p>
+      </div>
+
+      <div class="card">
+        <div class="date"><span class="day">05</span><span class="month">AGO</span></div>
+        <h3>Movie Night</h3>
+        <p>Noite de cinema com exibição de filmes em inglês e debate interativo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tipos-eventos">
+    <h2>Tipos de Eventos</h2>
+    <div class="tipos-cards">
+      <div class="tipo-card">
+        <div class="icon">🎤</div>
+        <h3>Workshops</h3>
+        <p>Atividades práticas para desenvolver habilidades linguísticas específicas.</p>
+      </div>
+
+      <div class="tipo-card">
+        <div class="icon">🎭</div>
+        <h3>Eventos Culturais</h3>
+        <p>Momentos de imersão cultural com música, teatro e gastronomia.</p>
+      </div>
+
+      <div class="tipo-card">
+        <div class="icon">☕</div>
+        <h3>Conversação</h3>
+        <p>Ambientes descontraídos para praticar idiomas de forma natural.</p>
+      </div>
+
+      <div class="tipo-card">
+        <div class="icon">🎓</div>
+        <h3>Palestras</h3>
+        <p>Especialistas convidados falam sobre aprendizado e intercâmbio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="participar">
+    <h2>Quer participar dos nossos eventos?</h2>
+    <p>Entre em contato e fique por dentro das novidades!</p>
+    <div class="botoes">
+      <button class="botao-primario">Ver próximos eventos</button>
+      <button class="botao-secundario">Fale conosco</button>
+    </div>
+  </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
             <div class="footer-content">
-               <div class="footer-section">
-                  <div class="footer-logo">
-                     <img src="img/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo" />
-                  </div>
-                  <p class="footer-description">
-                     Transformando vidas através do aprendizado de idiomas. Sua jornada
-                     para a fluência começa aqui.
-                  </p>
-                  <div class="social-links">
-                     <a target="_blank" href="https://www.facebook.com/people/CWBidiomas/61563368818904/?_rdr" class="social-link"
-                        aria-label="Facebook">
-                     <i class="fab fa-facebook-f"></i>
-                     </a>
-                     <a target="_blank" href="https://www.instagram.com/cwbidiomas/" class="social-link" aria-label="Instagram">
-                     <i class="fab fa-instagram"></i>
-                     </a>
-                     <a target="_blank" href="#" class="social-link" aria-label="LinkedIn">
-                     <i class="fab fa-linkedin-in"></i>
-                     </a>
-                     <a target="_blank" href="https://linktr.ee/cwbidiomas" class="social-link" aria-label="Linktree">
-                     <i class="fa-brands fa-linktree"></i>
-                     </a>
-                  </div>
-               </div>
-               <div class="footer-section">
-                  <h3 class="footer-title">Navegação</h3>
-                  <ul class="footer-links">
-                     <li><a href="index.html">Home</a></li>
-                     <li><a href="cursos.html">Cursos</a></li>
-                     <li><a href="metodologia.html">Metodologia</a></li>
-                     <li><a href="sobre.html">Sobre Nós</a></li>
-                     <li><a href="planos.html">Planos</a></li>
-                     <li><a href="eventos.html">Eventos</a></li>
-                     <li><a href="faq.html">FAQ</a></li>
-                     <li><a href="contato.html">Contato</a></li>
-                  </ul>
-               </div>
-               <div class="footer-section">
-                  <h3 class="footer-title">Cursos</h3>
-                  <ul class="footer-links">
-                     <li><a href="cursos.html#kids">Kids (6-12 anos)</a></li>
-                     <li><a href="cursos.html#teens">Teens (13-17 anos)</a></li>
-                     <li><a href="cursos.html#adults">Adults (18+ anos)</a></li>
-                     <li><a href="cursos.html#preparatorios">Preparatórios</a></li>
-                     <li><a href="cursos.html#conversacao">Conversação</a></li>
-                  </ul>
-               </div>
-               <div class="footer-section">
-                  <h3 class="footer-title">Contato</h3>
-                  <div class="contact-info">
-                     <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i><a target="_blank"
-                           href="https://maps.app.goo.gl/1Y9BDfzj1R5xSoHP7">Rua João Palomeque, 128<br />Novo Mundo- Curitiba/PR</a>
-                     </div>
-                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:5541991345683">(41) 99134-5683</a>
-                     </div>
-                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:contato@cwbidiomas.com.br">contato@cwbidiomas.com.br</a>
-                     </div>
-                     <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Seg - Sex: 9h às 21h<br />Sáb: 9h às 21h</span>
-                     </div>
-                  </div>
-               </div>
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="img/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo" />
+                    </div>
+                    <p class="footer-description">
+                        Transformando vidas através do aprendizado de idiomas. Sua jornada
+                        para a fluência começa aqui.
+                    </p>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.facebook.com/people/CWBidiomas/61563368818904/?_rdr"
+                            class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/cwbidiomas/" class="social-link"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a target="_blank" href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a target="_blank" href="https://linktr.ee/cwbidiomas" class="social-link"
+                            aria-label="Linktree">
+                            <i class="fa-brands fa-linktree"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Navegação</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="metodologia.html">Metodologia</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="planos.html">Planos</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Cursos</h3>
+                    <ul class="footer-links">
+                        <li><a href="cursos.html#kids">Kids (6-12 anos)</a></li>
+                        <li><a href="cursos.html#teens">Teens (13-17 anos)</a></li>
+                        <li><a href="cursos.html#adults">Adults (18+ anos)</a></li>
+                        <li><a href="cursos.html#preparatorios">Preparatórios</a></li>
+                        <li><a href="cursos.html#conversacao">Conversação</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contato</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i><a target="_blank"
+                                href="https://maps.app.goo.gl/1Y9BDfzj1R5xSoHP7">Rua João Palomeque, 128<br />Novo
+                                Mundo- Curitiba/PR</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:5541991345683">(41) 99134-5683</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contato@cwbidiomas.com.br">contato@cwbidiomas.com.br</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Seg - Sex: 9h às 21h<br />Sáb: 9h às 21h</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="footer-bottom">
-               <div class="footer-bottom-content">
-                  <p>&copy; 2025 CWB Idiomas. Todos os direitos reservados.</p>
-                  <div class="footer-bottom-links">
-                     <a href="politica-privacidade.html">Política de Privacidade</a>
-                     <a href="termos-de-uso.html">Termos de Uso</a>
-                  </div>
-               </div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 CWB Idiomas. Todos os direitos reservados.</p>
+                    <div class="footer-bottom-links">
+                        <a href="politica-privacidade.html">Política de Privacidade</a>
+                        <a href="termos-de-uso.html">Termos de Uso</a>
+                    </div>
+                </div>
             </div>
-         </div>
-      </footer>
-<a href="https://wa.me/5541991345683?text=Olá! Gostaria de saber mais sobre os cursos da CWB Idiomas."
-    class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-</a>
+        </div>
+    </footer>
+        <a href="https://wa.me/5541991345683?text=Olá! Gostaria de saber mais sobre os cursos da CWB Idiomas."
+        class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+  <script src="js/main.js"></script>
 </body>
 </html>
