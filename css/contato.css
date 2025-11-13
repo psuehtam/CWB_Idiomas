@@ -4,7 +4,31 @@
     color: var(--yellow-color);
 }
 
-/* ===== Banner SECTION ===== */
+/* Estilização predefinida para algumas sections */
+section {
+    padding: 80px 0;
+}
+
+section.grayline {
+    background-color: var(--gray-bg);
+    padding: 80px 0 80px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+section.blackline {
+    background-color: var(--dark-bg);
+    padding: 80px 0 80px;
+}
+
+section.greenline {
+    background-color: var(--green-color);
+    padding: 80px 0 80px;
+}
+
+/* Estilização do Banner -------------------------------------------------------------------------------------- */
+
 .banner {
     background-color: var(--green-color);
     padding: 80px 0;
@@ -31,32 +55,9 @@
     margin-bottom: 2rem;
 }
 
-/* ===== SEÇÕES GERAIS ===== */
-section {
-    padding: 80px 0;
-}
+/* Estilização da parte canais de contato */
 
-section.grayline {
-    background-color: var(--gray-bg);
-    padding: 80px 0 80px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-section.blackline {
-    background-color: var(--dark-bg);
-    padding: 80px 0 80px;
-}
-
-section.greenline {
-    background-color: var(--green-color);
-    padding: 80px 0 80px;
-}
-
-/* ===== Cards grayline ===== */
-
-.card {
+.canais-contato .card {
     width: 220px;
     padding: 40px 20px;
     border-radius: 15px;
@@ -70,12 +71,12 @@ section.greenline {
     cursor: pointer;
 }
 
-.card:hover {
+.canais-contato .card:hover {
     transform: translateY(-5px);
     box-shadow: 10px 10px 10px #00000050;
 }
 
-.card .icon {
+.canais-contato .card .icon {
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -85,25 +86,25 @@ section.greenline {
     justify-content: center;
 }
 
-.card .tittle {
+.canais-contato .card .tittle {
     color: var(--white-text);
     text-align: center;
 }
 
-.card .info {
+.canais-contato .card .info {
     font-weight: 100;
     font-size: 14px;
     color: var(--white-text);
     text-align: center;
 }
 
-.card .info p {
+.canais-contato .card .info p {
 
     margin: 0;
     padding: 0;
 }
 
-/* ===== FORMS Container ===== */
+/* Estilização dos formularios */
 
 .form-container {
     display: flex;
@@ -218,7 +219,7 @@ section.greenline {
     margin: 0;
 }
 
-/* DUVIDAS ----------------------------------------------------------------*/
+/* campo de duvidas frequentes -------------------------------------------------------------------------*/
 
 .duvidas-container {
     display: flex;
@@ -255,12 +256,19 @@ section.greenline {
     margin-bottom: 40px;
 }
 
-.section-perguntas .card {
-    width: 100%;
+.duvidas-container .section-perguntas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.duvidas-container .section-perguntas .card {
+    width: 300px;
     padding: 20px;
     border-radius: 15px;
     background-color: var(--dark-bg);
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -268,25 +276,23 @@ section.greenline {
     transition: 0.2s;
 }
 
-.section-perguntas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+.duvidas-container .section-perguntas .card.active {
+    display: flex;
 }
 
-.section-perguntas .card:hover {
+.duvidas-container .section-perguntas .card:hover {
     transform: translateY(-5px);
     box-shadow: 10px 10px 10px #00000050;
 }
 
-.section-perguntas .card .pergunta {
+.duvidas-container .section-perguntas .card .pergunta {
     color: var(--white-text);
     text-align: center;
     font-size: 18px;
     font-weight: 600;
 }
 
-.section-perguntas .card p {
+.duvidas-container .section-perguntas .card p {
     font-weight: 100;
     font-size: 14px;
     color: var(--gray-text);
@@ -336,51 +342,6 @@ section.greenline {
 .duvidas-container .ver-mais p {
     margin: 0;
 }
-
-.duvidas-container .container-ver-mais {
-    margin-top: 20px;
-    display: none;
-    transition: 0.3s;
-}
-
-.duvidas-container .container-ver-mais.ativo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.duvidas-container .container-ver-mais .card {
-    width: 100%;
-    padding: 20px;
-    border-radius: 15px;
-    background-color: var(--dark-bg);
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 15px;
-    transition: 0.2s;
-}
-
-.duvidas-container .container-ver-mais .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 10px 10px 10px #00000050;
-}
-
-.duvidas-container .container-ver-mais .card .pergunta {
-    color: var(--white-text);
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.duvidas-container .container-ver-mais .card p {
-    font-weight: 100;
-    font-size: 14px;
-    color: var(--gray-text);
-    text-align: center;
-}
-
 
 /* Responsta Rapida ----------------------------------------------------------- */
 

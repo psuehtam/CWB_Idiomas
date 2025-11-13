@@ -210,7 +210,7 @@ section.greenline {
     color: var(--green-color);
 }
 .container-resposta-rapida .canais .ligue-agora:hover {
-    background: var(--grayline);
+    background: var(--gray-bg);
     transform: translateY(-2px);
     box-shadow: 10px 10px 10px #00000030;
 }
