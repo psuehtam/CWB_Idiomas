@@ -39,10 +39,9 @@ if (cards.length && dots.length && btnPrev && btnNext) {
 const heroImg = document.querySelector(".img-hero img");
 
 const imagens = [
-    "img/CWB Idiomas-C0.jpg",
-    "img/CWB Idiomas-C1.jpg",
-    "img/CWB Idiomas-C2.jpg",
-    "img/CWB Idiomas-alunos.jpg"
+    "img/banner/CWB-Idiomas-0118.jpg",
+    "img/banner/CWB-Idiomas-0053.jpg",
+    "img/banner/CWB-Idiomas-0023.jpg",
 ];
 
 if (heroImg) {
@@ -57,8 +56,8 @@ if (heroImg) {
 
             heroImg.src = imagens[heroIndex];
             heroImg.classList.remove("fade");
-        }, 400);
+        }, 350);
     }
 
-    setInterval(trocarImagem, 4000);
+    setInterval(trocarImagem, 3500);
 }
