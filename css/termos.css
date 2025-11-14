@@ -142,6 +142,9 @@
 .contact-info p {
   margin-bottom: 0.5rem;
 }
+.footer{
+    border-top: solid 1px var(--grayline);
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
