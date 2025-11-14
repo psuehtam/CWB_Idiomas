@@ -399,3 +399,82 @@
 .innovative-materials-card ul li i {
     color: var(--magent-color);
 }
+
+
+.unique {
+    background-color: var(--dark-bg);
+    padding: 80px 0;
+}
+
+.unique-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.unique-header{
+    text-align: center;
+}
+
+ .unique-header h2{
+    color: var(--white-text);
+}
+.unique-header p{
+    color: var(--gray-text);
+}
+
+.unique-cards h3{
+    color: var(--white-text);
+
+}
+
+.unique-cards p{
+    color: var(--gray-text);
+
+}
+.unique-icon {
+    align-items: center;
+    background-color: var(--yellow-color);
+    border-radius: 50%;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    margin: 0 20px 0 0;
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.unique-icon {
+    color: var(--dark-bg);
+    font-size: 25   px;
+}
+
+.unique-content {
+    margin-bottom: 30px;
+}
+
+.unique-cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.Card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.unique-cards h3 {
+    color: var(--white-text);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.unique-cards p {
+    color: var(--gray-text);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
