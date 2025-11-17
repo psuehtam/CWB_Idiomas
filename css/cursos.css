@@ -1,5 +1,6 @@
 @import url('global.css');
 
+/* === BANNER PRINCIPAL === */
 .banner {
     margin-top: 80px;
 }
@@ -16,6 +17,7 @@
     color: var(--subtitle);
 }
 
+/* === CONTAINER DE OPÇÕES/CLASSIFICAÇÃO === */
 .option-conteiner {
     background-color: var(--gray-bg);
     display: flex;
@@ -42,6 +44,7 @@
     transition: background-color 0.3s ease;
 }
 
+/* === SEÇÃO PARA CRIANÇAS === */
 .option-kids {
     align-items: center;
     background-color: var(--dark-bg);
@@ -61,7 +64,7 @@
     color: var(--gray-text);
 }
 
-
+/* === BLOCOS DE OPÇÃO === */
 .option-block {
     align-items: center;
     background-color: var(--gray-bg);
@@ -87,9 +90,9 @@
     display: flex;
     gap: 40px;
     margin-top: 40px;
-
 }
 
+/* === ÍCONES E CARACTERÍSTICAS === */
 .icone {
     align-items: center;
     background-color: var(--yellow-color);
@@ -120,6 +123,7 @@
     text-align: left;
 }
 
+/* === PREÇOS E BOTÕES === */
 .price {
     align-items: center;
     display: flex;
@@ -141,7 +145,6 @@
     margin-top: 20px;
     padding: 15px 30px;
     transition: 0.3s ease;
-
 }
 
 .Matricula:hover {
@@ -150,6 +153,7 @@
     transition: 0.3s ease;
 }
 
+/* === SEÇÃO PARA ADOLESCENTES === */
 .option-teens {
     align-items: center;
     background-color: var(--gray-bg);
@@ -169,6 +173,7 @@
     color: var(--gray-text);
 }
 
+/* === SEÇÃO PARA ADULTOS === */
 .option-Adults {
     align-items: center;
     background-color: var(--dark-bg);
@@ -185,6 +190,7 @@
     margin-bottom: 20px;
 }
 
+/* === SEÇÃO FINAL/CTA === */
 .final-conteiner {
     background-color: var(--green-color);
     font-size: 25px;
@@ -195,7 +201,6 @@
 
 .final-conteiner p{
     color: var(--subtitle);
-
 }
 
 .final-conteiner button {
@@ -219,6 +224,7 @@
     transition: 0.3s ease;
 }
 
+/* === CONTROLE DE SEÇÕES (JavaScript) === */
 .secao {
     display: none;
 }
@@ -226,6 +232,7 @@
 .secao.ativa {
     display: block;
 }
+
 /* ===== RESPONSIVIDADE ===== */
 
 @media (max-width: 1024px) {
@@ -368,4 +375,3 @@
         max-width: 280px;
     }
 }
-
