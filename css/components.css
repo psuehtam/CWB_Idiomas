@@ -362,6 +362,15 @@
     list-style: none;
 }
 
+.menu-hamburg .menu-list .menu-item .menu-link {
+    display: block;
+    width: 100%;
+    color: var(--white-text);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .menu-hamburg .menu-list .menu-item:hover {
     background-color: var(--magent-color);
 }
