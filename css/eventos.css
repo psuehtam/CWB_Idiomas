@@ -1,0 +1,255 @@
+@import url('global.css');
+
+body {
+  background: var(--dark-bg);
+  color: #fff;
+
+}
+
+.hero {
+  margin-top: 80px;
+  background-color: var(--green-color);
+  color: var(--title);
+  font-size: 25px;
+  padding: 50px;
+  text-align: center;
+}
+
+
+.hero p {
+  color: var(--subtitle);
+}
+
+.eventos,
+.eventos-passados,
+.tipos-eventos {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.eventos h2,
+.eventos-passados h2,
+.tipos-eventos h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.eventos p {
+  color: #a7a7a7;
+  margin-top: 0.3rem;
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 20px;
+  width: 320px;
+  padding: 2rem;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.destaque {
+  border: 2px solid #ff007f;
+}
+
+.badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #ff007f;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.date {
+  background: #ffd700;
+  display: inline-block;
+  text-align: center;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.date .day {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.date .month {
+  font-size: 0.9rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  list-style: none;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.card ul li {
+  margin-bottom: 0.3rem;
+}
+
+.card ul li::before {
+  content: "• ";
+  color: #00e0c6;
+}
+
+button {
+  background: #ffd700;
+  border: none;
+  color: #000;
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff007f;
+  color: #fff;
+}
+
+
+.tipos-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.tipo-card {
+  background: #1a1a1a;
+  border-radius: 20px;
+  width: 250px;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.tipo-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.tipo-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.participar {
+  background: #00e0c6;
+  color: #000;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.participar h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.participar p {
+  margin-top: 0.5rem;
+}
+
+.botoes {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.botao-primario {
+    background-color: var(--dark-bg);
+    border-radius: 8px;
+    border: none;
+    border: solid 2px var(--magent-color);
+    color: var(--green-color);
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 25px 40px;
+    transition: 0.3s ease;
+}
+.botao-primario:hover {
+    background-color: var(--yellow-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: var(--dark-bg);
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+}
+
+.botao-secundario {
+    background-color: var(--dark-bg);
+    border-radius: 8px;
+    border: none;
+    border: solid 2px var(--magent-color);
+    color: var(--green-color);
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 25px 40px;
+    transition: 0.3s ease;
+}
+.botao-secundario:hover {
+    background-color: var(--yellow-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: var(--dark-bg);
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .cards,
+  .tipos-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .tipo-card {
+    width: 90%;
+  }
+
+  .botoes {
+    flex-direction: column;
+  }
+}

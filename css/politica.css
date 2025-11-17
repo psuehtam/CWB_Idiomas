@@ -1,17 +1,213 @@
-@import url(css/global.css);
-
-.hero{
+/* Página de Política de Privacidade */
+@import url(global.css);
+.hero {
     background-color: var(--green-color);
-    padding: 120px 0px 80px;
+    padding: 120px 0 80px;
     margin-top: 70px;
 }
 
-.hero-container{
+.hero-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
 }
 
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    color: var(--title);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--subtitle);
+    margin-bottom: 2rem;
+}
+
+.hero-subtitle strong {
+    color: var(--title);
+}
+
+.politica-content {
+    background-color: var(--dark-bg);
+    padding: 80px 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.politica-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.politica-item {
+    background-color: var(--gray-bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    margin: 20px 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid var(--whiteline);
+    overflow: hidden;
+}
+
+.politica-item:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.politica-item.active {
+    background-color: var(--gray-bg);
+}
+
+.politica-item h3 {
+    padding: 20px 25px;
+    margin: 0;
+    color: var(--white-text);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.politica-item h3::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--green-color);
+    transition: transform 0.3s ease;
+}
+
+.politica-item.active h3::after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+.politica-item:hover h3 {
+    color: var(--green-color);
+}
+
+.politica-item .conteudo {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 25px;
+}
+
+.politica-item.active .conteudo {
+    max-height: 2000px;
+    padding: 0 25px 25px;
+}
+
+.politica-item .conteudo p {
+    color: var(--gray-text);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.politica-item .conteudo ul {
+    color: var(--gray-text);
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.politica-item .conteudo li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.politica-item .conteudo strong {
+    color: var(--green-color);
+}
+
+.contact-info1 {
+    background-color: var(--dark-bg);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    border-left: 4px solid var(--green-color);
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+    color: var(--gray-text);
+}
+
+.footer{
+    border-top: solid 1px var(--grayline);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .politica-content {
+        padding: 40px 0;
+    }
+    
+    .politica-item h3 {
+        padding: 15px 20px;
+        font-size: 1.1rem;
+    }
+    
+    .politica-item .conteudo {
+        padding: 0 20px;
+    }
+    
+    .politica-item.active .conteudo {
+        padding: 0 20px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .politica-container {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .politica-item h3 {
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+    
+    .politica-item .conteudo {
+        padding: 0 15px;
+    }
+    
+    .politica-item.active .conteudo {
+        padding: 0 15px 15px;
+    }
+    
+    .contact-info {
+        padding: 0.75rem;
+    }
+}

@@ -8,7 +8,8 @@
     <meta name="description"
         content="Aprenda inglês, espanhol e outros idiomas na CWB Idiomas. Metodologia inovadora, professores nativos e aulas flexíveis em Curitiba.">
 
-    <link rel="icon" href="img/logo-cwb-padrao.png" type="image/x-icon">
+    <link rel="icon" href="img/logo/icon-cwb-padrao.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="img/logo/icon-cwb-preto.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -23,54 +24,82 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
+    <!-- Campo do header da pagina -->
+       <header class="header" id="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
                     <a href="index.html">
-                        <img src="img/logo-cwb-horizontal.png" alt="CWB Idiomas" class="logo">
+                        <img id="hero-img" src="img/logo/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo">
                     </a>
                 </div>
-
                 <div class="nav-menu" id="nav-menu">
                     <ul class="nav-list">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/cursos.html" class="nav-link">Cursos</a>
+                            <a href="cursos.html" class="nav-link ">Cursos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/metodologia.html" class="nav-link">Metodologia</a>
+                            <a href="metodologia.html" class="nav-link">Metodologia</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/sobre.html" class="nav-link">Sobre Nós</a>
+                            <a href="sobre.html" class="nav-link">Sobre Nós</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/planos.html" class="nav-link">Planos</a>
+                            <a href="eventos.html" class="nav-link">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/eventos.html" class="nav-link">Eventos</a>
+                            <a href="faq.html" class="nav-link active">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/faq.html" class="nav-link">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/contato.html" class="nav-link active">Contato</a>
+                            <a href="contato.html" class="nav-link">Contato</a>
                         </li>
                     </ul>
                 </div>
-
                 <div class="nav-toggle" id="nav-toggle">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-            </div>
+
+                <!-- Responsividade -->
+                <button class="btn-open-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <nav class="menu-hamburg">
+                    <ul class="menu-list">
+                        <button class="btn-close-menu">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <li class="menu-item">
+                            <a href="index.html" class="nav-link menu-link">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="cursos.html" class="nav-link menu-link">Cursos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="metodologia.html" class="nav-link menu-link">Metodologia</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="sobre.html" class="nav-link menu-link">Sobre Nós</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="eventos.html" class="nav-link menu-link">Eventos</a>
+                        </li>
+                        <li class="menu-item active">
+                            <a href="faq.html" class="nav-link menu-link">FAQ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contato.html" class="nav-link menu-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Fim da responsividade -->
+        </div>
         </nav>
     </header>
-
     <!-- Banner Section -->
     <section class="banner">
         <div class="container">
@@ -90,228 +119,137 @@
                 <button>Metodologia</button>
             </nav>
             <div id="Geral">
-
                 <div class="card">
                     <h3 class="pergunta">Qual a idade mínima para começar os cursos?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed!</p>
+                    <p class="resposta">Aceitamos alunos a partir de 8 anos de idade. Também temos turmas especiais para
+                        adolescentes e adultos.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Vocês oferecem certificação internacional?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Vocês oferecem aulas presenciais e online?</h3>
+                    <p class="resposta">Sim! Nossos cursos estão disponíveis tanto no formato presencial quanto online
+                        ao vivo, com os mesmos professores e metodologia.</p>
+                </div>
+                <div class="card">
+                    <h3 class="pergunta">A CWB Idiomas oferece certificado?</h3>
+                    <p class="resposta">Sim, todos os alunos que concluem o curso recebem um certificado reconhecido de
+                        proficiência conforme o nível alcançado.</p>
+                </div>
+                <div class="card">
+                    <h3 class="pergunta">Posso fazer uma aula experimental antes de me matricular?</h3>
+                    <p class="resposta">Claro! Você pode agendar uma aula experimental gratuita para conhecer nossa
+                        metodologia e professores.</p>
                 </div>
                 <div class="card">
                     <h3 class="pergunta">Qual o horário de funcionamento da escola?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
-                </div>
-                <div class="card">
-                    <h3 class="pergunta">Posso fazer aulas online?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
-                </div>
-                <div class="card">
-                    <h3 class="pergunta">Como funciona a reposição de aulas?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <p class="resposta">Atendemos de segunda a sexta, das 9h às 21h, e aos sábados das 9h às 13h.</p>
                 </div>
             </div>
             <div id="Cursos">
-
                 <div class="card">
-                    <h3 class="pergunta">Cursos?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed!</p>
+                    <h3 class="pergunta">Quais idiomas são oferecidos pela escola?</h3>
+                    <p class="resposta">Atualmente oferecemos cursos de Inglês, Espanhol, Francês, Alemão e Italiano,
+                        com turmas para diferentes faixas etárias e níveis.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Cursos?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Quanto tempo dura um curso completo?</h3>
+                    <p class="resposta">A duração varia conforme o idioma e o ritmo do aluno, mas em média, um curso
+                        completo tem duração de 18 a 24 meses.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Cursos?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Há turmas específicas para crianças e adolescentes?</h3>
+                    <p class="resposta">Sim! Temos turmas Kids (6 a 12 anos) e Teens (13 a 17 anos), com metodologias
+                        adaptadas à faixa etária.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Cursos?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Vocês têm cursos preparatórios para exames internacionais?</h3>
+                    <p class="resposta">Sim. Oferecemos preparatórios para TOEFL, IELTS, Cambridge e DELE, com foco em
+                        estratégias e simulações reais de prova.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Cursos?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Há aulas particulares disponíveis?</h3>
+                    <p class="resposta">Sim. Oferecemos aulas particulares personalizadas, com horários flexíveis e foco
+                        nas necessidades específicas do aluno.</p>
                 </div>
             </div>
             <div id="Matricula">
-
                 <div class="card">
-                    <h3 class="pergunta">Matricula?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed!</p>
+                    <h3 class="pergunta">Como faço para me matricular?</h3>
+                    <p class="resposta">Você pode realizar sua matrícula diretamente em nossa unidade ou online,
+                        preenchendo o formulário disponível no site.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Matricula?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Preciso fazer um teste de nivelamento?</h3>
+                    <p class="resposta">Sim, o teste é gratuito e serve para identificar seu nível atual no idioma,
+                        garantindo que você entre na turma mais adequada.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Matricula?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Quais documentos são necessários?</h3>
+                    <p class="resposta">Para efetuar a matrícula, é necessário apresentar um documento de identificação
+                        e comprovante de residência. Para menores, também é preciso autorização dos responsáveis.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Matricula?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Posso transferir minha matrícula para outra unidade?</h3>
+                    <p class="resposta">Sim. Caso mude de endereço, é possível transferir sua matrícula para outra
+                        unidade CWB Idiomas sem custos adicionais.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Matricula?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Há período específico para matrículas?</h3>
+                    <p class="resposta">Não. As matrículas ficam abertas durante todo o ano, conforme disponibilidade de
+                        turmas e horários.</p>
                 </div>
             </div>
             <div id="Pagamento">
-
                 <div class="card">
-                    <h3 class="pergunta">Pagamento?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed!</p>
+                    <h3 class="pergunta">Quais são as formas de pagamento aceitas?</h3>
+                    <p class="resposta">Aceitamos cartões de crédito e débito, transferências, PIX e boletos bancários.
+                    </p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Pagamento?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">O material didático está incluso na mensalidade?</h3>
+                    <p class="resposta">O material é cobrado separadamente, mas pode ser parcelado junto com a matrícula
+                        ou pago à parte.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Pagamento?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Vocês oferecem descontos?</h3>
+                    <p class="resposta">Sim! Temos descontos para famílias, indicações, empresas parceiras e pagamento
+                        antecipado.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Pagamento?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Posso trancar o curso temporariamente?</h3>
+                    <p class="resposta">Sim, é possível trancar o curso mediante solicitação formal. O tempo de
+                        trancamento é limitado a 3 meses por vez.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Pagamento?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">O que acontece em caso de atraso no pagamento?</h3>
+                    <p class="resposta">Haverá a aplicação de multa e juros, conforme contrato. O aluno pode regularizar
+                        a situação diretamente com a secretaria.</p>
                 </div>
             </div>
             <div id="Metodologia">
-
                 <div class="card">
-                    <h3 class="pergunta">Metodologia?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed!</p>
+                    <h3 class="pergunta">Qual é a metodologia utilizada pela CWB Idiomas?</h3>
+                    <p class="resposta">Trabalhamos com uma metodologia comunicativa, focada em conversação e imersão no
+                        idioma desde a primeira aula.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Metodologia?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">As aulas são ministradas por professores nativos?</h3>
+                    <p class="resposta">Temos professores nativos e bilíngues altamente qualificados, com certificações
+                        internacionais e experiência no ensino de idiomas.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Metodologia?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Há acompanhamento individual do progresso do aluno?</h3>
+                    <p class="resposta">Sim. Cada aluno recebe acompanhamento personalizado, com relatórios de
+                        desempenho e feedbacks regulares.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Metodologia?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Vocês utilizam recursos tecnológicos nas aulas?</h3>
+                    <p class="resposta">Sim, nossas aulas utilizam plataformas digitais, vídeos interativos, exercícios
+                        online e materiais multimídia para reforçar o aprendizado.</p>
                 </div>
                 <div class="card">
-                    <h3 class="pergunta">Metodologia?</h3>
-                    <p class="resposta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni qui fugiat
-                        aliquam repellendus sunt cum! Labore aliquam numquam quibusdam? Itaque esse velit laboriosam
-                        architecto. Doloremque aut molestiae eius voluptates sed! Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt earum, magnam explicabo eligendi facere impedit molestiae
-                        atque, numquam maxime veniam rem repellat libero tempora quia aperiam temporibus fugiat natus
-                        ex?</p>
+                    <h3 class="pergunta">Como é feita a avaliação dos alunos?</h3>
+                    <p class="resposta">A avaliação é contínua, considerando participação, desempenho em sala, tarefas,
+                        provas e atividades práticas de conversação.</p>
                 </div>
             </div>
         </div>
@@ -341,98 +279,92 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="img/logo-cwb-horizontal.png" alt="CWB Idiomas" class="logo">
-                    </div>
-                    <p class="footer-description">
-                        Transformando vidas através do aprendizado de idiomas.
-                        Sua jornada para a fluência começa aqui.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h3 class="footer-title">Navegação</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/cursos.html">Cursos</a></li>
-                        <li><a href="pages/metodologia.html">Metodologia</a></li>
-                        <li><a href="pages/sobre.html">Sobre Nós</a></li>
-                        <li><a href="pages/planos.html">Planos</a></li>
-                        <li><a href="pages/eventos.html">Eventos</a></li>
-                        <li><a href="pages/faq.html">FAQ</a></li>
-                        <li><a href="pages/contato.html">Contato</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3 class="footer-title">Cursos</h3>
-                    <ul class="footer-links">
-                        <li><a href="pages/cursos.html#kids">Kids (6-12 anos)</a></li>
-                        <li><a href="pages/cursos.html#teens">Teens (13-17 anos)</a></li>
-                        <li><a href="pages/cursos.html#adults">Adults (18+ anos)</a></li>
-                        <li><a href="pages/cursos.html#preparatorios">Preparatórios</a></li>
-                        <li><a href="pages/cursos.html#conversacao">Conversação</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3 class="footer-title">Contato</h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Rua das Flores, 123<br>Centro - Curitiba/PR</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+5541999999999">(41) 99999-9999</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:contato@cwbidiomas.com.br">contato@cwbidiomas.com.br</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Seg - Sex: 8h às 20h<br>Sáb: 8h às 12h</span>
-                        </div>
-                    </div>
-                </div>
+     <footer class="footer">
+      <div class="container">
+         <div class="footer-content">
+            <div class="footer-section">
+               <div class="footer-logo">
+                  <img src="img/logo/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo">
+               </div>
+               <p class="footer-description">
+                  Transformando vidas através do aprendizado de idiomas.
+                  Sua jornada para a fluência começa aqui.
+               </p>
+               <div class="social-links">
+                  <a href="https://www.facebook.com/people/CWBidiomas/61563368818904/?_rdr" class="social-link"
+                     aria-label="Facebook">
+                     <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.instagram.com/cwbidiomas/" class="social-link" aria-label="Instagram">
+                     <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="social-link" aria-label="LinkedIn">
+                     <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="social-link" aria-label="Linktree">
+                     <i class="fa-brands fa-linktree"></i>
+                  </a>
+               </div>
             </div>
-
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 CWB Idiomas. Todos os direitos reservados.</p>
-                    <div class="footer-bottom-links">
-                        <a href="#">Política de Privacidade</a>
-                        <a href="#">Termos de Uso</a>
-                    </div>
-                </div>
+            <div class="footer-section">
+               <h3 class="footer-title">Navegação</h3>
+               <ul class="footer-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="cursos.html">Cursos</a></li>
+                  <li><a href="metodologia.html">Metodologia</a></li>
+                  <li><a href="sobre.html">Sobre Nós</a></li>
+                  <li><a href="eventos.html">Eventos</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+               </ul>
             </div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/5541999999999?text=Olá! Gostaria de saber mais sobre os cursos da CWB Idiomas."
-        class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+            <div class="footer-section">
+               <h3 class="footer-title">Cursos</h3>
+               <ul class="footer-links">
+                  <li><a href="cursos.html#kids">Kids (6-12 anos)</a></li>
+                  <li><a href="cursos.html#teens">Teens (13-17 anos)</a></li>
+                  <li><a href="cursos.html#adults">Adults (18+ anos)</a></li>
+                  <li><a href="cursos.html#preparatorios">Preparatórios</a></li>
+                  <li><a href="cursos.html#conversacao">Conversação</a></li>
+               </ul>
+            </div>
+            <div class="footer-section">
+               <h3 class="footer-title">Contato</h3>
+               <div class="contact-info">
+                  <div class="contact-item">
+                     <i class="fas fa-map-marker-alt"></i>
+                     <span>Rua João Palomeque, 128<br>Novo Mundo - Curitiba/PR</span>
+                  </div>
+                  <div class="contact-item">
+                     <i class="fas fa-phone"></i>
+                     <a href="tel:5541991345683">(41) 99134-5683</a>
+                  </div>
+                  <div class="contact-item">
+                     <i class="fas fa-envelope"></i>
+                     <a href="mailto:contato@cwbidiomas.com.br">contato@cwbidiomas.com.br</a>
+                  </div>
+                  <div class="contact-item">
+                     <i class="fas fa-clock"></i>
+                     <span>Seg - Sex: 9h às 21h<br>Sáb: 9h às 21h</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="footer-bottom-content">
+               <p>&copy; 2025 CWB Idiomas. Todos os direitos reservados.</p>
+               <div class="footer-bottom-links">
+                  <a href="politica-privacidade.html">Política de Privacidade</a>
+                  <a href="termos-de-uso.html">Termos de Uso</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <a href="https://wa.me/5541991345683?text=Olá! Gostaria de saber mais sobre os cursos da CWB Idiomas."
+      class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+   </a>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>

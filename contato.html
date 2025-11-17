@@ -7,16 +7,9 @@
     <title>CWB Idiomas - Escola de Idiomas em Curitiba</title>
     <meta name="description"
         content="Aprenda inglês, espanhol e outros idiomas na CWB Idiomas. Metodologia inovadora, professores nativos e aulas flexíveis em Curitiba.">
-
-    <link rel="icon" href="img/logo-cwb-padrao.png" type="image/x-icon">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Icons -->
+    <link rel="icon" href="img/logo/icon-cwb-padrao.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="img/logo/icon-cwb-preto.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/components.css">
@@ -24,50 +17,79 @@
 
 <body>
     <!-- Header -->
-    <header class="header" id="header">
+<header class="header" id="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
                     <a href="index.html">
-                        <img src="img/logo-cwb-horizontal.png" alt="CWB Idiomas" class="logo">
+                        <img id="hero-img" src="img/logo/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo">
                     </a>
                 </div>
-
                 <div class="nav-menu" id="nav-menu">
                     <ul class="nav-list">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/cursos.html" class="nav-link">Cursos</a>
+                            <a href="cursos.html" class="nav-link">Cursos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/metodologia.html" class="nav-link">Metodologia</a>
+                            <a href="metodologia.html" class="nav-link">Metodologia</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/sobre.html" class="nav-link">Sobre Nós</a>
+                            <a href="sobre.html" class="nav-link">Sobre Nós</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/planos.html" class="nav-link">Planos</a>
+                            <a href="eventos.html" class="nav-link">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/eventos.html" class="nav-link">Eventos</a>
+                            <a href="faq.html" class="nav-link">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/faq.html" class="nav-link">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/contato.html" class="nav-link active">Contato</a>
+                            <a href="contato.html" class="nav-link active">Contato</a>
                         </li>
                     </ul>
                 </div>
-
                 <div class="nav-toggle" id="nav-toggle">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-            </div>
+
+                <!-- Responsividade -->
+                <button class="btn-open-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <nav class="menu-hamburg">
+                    <ul class="menu-list">
+                        <button class="btn-close-menu">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <li class="menu-item  ">
+                            <a href="index.html" class="nav-link menu-link">Home</a>
+                        </li>
+                        <li class="menu-item ">
+                            <a href="cursos.html" class="nav-link menu-link">Cursos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="metodologia.html" class="nav-link menu-link">Metodologia</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="sobre.html" class="nav-link menu-link">Sobre Nós</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="eventos.html" class="nav-link menu-link">Eventos</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="faq.html" class="nav-link menu-link">FAQ</a>
+                        </li>
+                        <li class="menu-item active">
+                            <a href="contato.html" class="nav-link menu-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Fim da responsividade -->
+        </div>
         </nav>
     </header>
 
@@ -80,7 +102,7 @@
     </section>
 
     <!-- Canais de Contato -->
-    <section class="grayline">
+    <section class="grayline canais-contato">
         <div class="card">
             <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30px" height="30px">
@@ -91,9 +113,7 @@
             </div>
             <b class="tittle">Endereço</b>
             <div class="info">
-                <p>Rua das Flores, 123</p>
-                <p>Centro - Curitiba/PR</p>
-                <p>CEP: 80020-000</p>
+                <span>Rua João Palomeque, 128<br>Novo Mundo - Curitiba/PR</span>
             </div>
         </div>
         <div class="card">
@@ -106,8 +126,8 @@
             </div>
             <b class="tittle">Telefone</b>
             <div class="info">
-                <p>(41) 99999-9999</p>
-                <p>(41) 3333-3333</p>
+                <p>(41) 99134-5683</p>
+                <p>(41) 4001-4891</p>
             </div>
         </div>
         <div class="card">
@@ -133,9 +153,8 @@
             </div>
             <b class="tittle">Horário de Funcionamento</b>
             <div class="info">
-                <p>Seg - Sex: 8h às 20h</p>
-                <p>Sábado: 8h às 12h</p>
-                <p>Domingo: Fechado</p>
+                <p>Seg - Sex: 9h às 21h</p>
+                <p>Sábado: 9h às 21h</p>
             </div>
         </div>
     </section>
@@ -189,7 +208,8 @@
                 <div class="linha">
                     <div class="input-box">
                         <label for="mensagem">Mensagem: </label>
-                        <textarea class="input" name="mensagem" id="mensagem" style="resize: vertical;" rows="10" placeholder="Conte-nos como podemos ajudar você..."></textarea>
+                        <textarea class="input" name="mensagem" id="mensagem" style="resize: vertical;" rows="10"
+                            placeholder="Conte-nos como podemos ajudar você..."></textarea>
                     </div>
                 </div>
                 <div class="linha termos">
@@ -210,7 +230,10 @@
                 <p class="subtittle">
                     Estamos no centro de Curitiba, Com facil acesso por transporte público e estacionamento próximo.
                 </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.690826152514!2d-49.29667992460879!3d-25.481997277528695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce30028665813%3A0xdc7963f989254f76!2sCWB%20Idiomas%20-%20Escola%20de%20Ingl%C3%AAs!5e0!3m2!1spt-BR!2sbr!4v1762260768062!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.690826152514!2d-49.29667992460879!3d-25.481997277528695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce30028665813%3A0xdc7963f989254f76!2sCWB%20Idiomas%20-%20Escola%20de%20Ingl%C3%AAs!5e0!3m2!1spt-BR!2sbr!4v1762260768062!5m2!1spt-BR!2sbr"
+                    width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <span><i class="fa-solid fa-bus-simple"></i>Várias linhas de onibus Próximas</span>
                 <span><i class="fa-solid fa-parking"></i>Várias linhas de onibus Próximas</span>
             </div>
@@ -239,7 +262,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Campo de Duvidas -->
     <section class="grayline">
         <div class="duvidas-container">
             <h2 class="tittle">Dúvidas Frequentes</h2>
@@ -247,27 +270,51 @@
                 Confira as respostas para as perguntas mais comuns
             </p>
             <div class="section-perguntas">
-                <div class="card">
-                    <b class="pergunta">Como funciona a aula experimental?</b>
+                <div class="card active">
+                    <b class="pergunta">Como funcionam a aula expiremental?</b>
                     <p>
                         A aula experimental é gratuita e tem duração de 60 minutos. Você pode conhecer nossa
                         metodologia, interagir com outros alunos e tirar todas as suas dúvidas.
                     </p>
                 </div>
-                <div class="card">
+                <div class="card active">
                     <b class="pergunta">Qual o prazo para a resposta?</b>
                     <p>
                         Respondemos todas as mensagens em até 24 horas dias úteis. Para whatsapp, o atendimento é
                         imediato durante o horário comercial.
                     </p>
                 </div>
-                <div class="card">
+                <div class="card active">
                     <b class="pergunta">Posso agendar uma visita à escola?</b>
                     <p>
                         Claro! Agendamos visitas de
                         segunda a sexta das 9h às 18h. Você
                         pode conhecer nossa estrutura e
                         conversar com nossa equipe.
+                    </p>
+                </div>
+                <div class="card">
+                    <b class="pergunta">As aulas são presenciais ou online?</b>
+                    <p>
+                        Você escolhe! Temos turmas presenciais, online e híbridas.
+                    </p>
+                </div>
+                <div class="card">
+                    <b class="pergunta">Vocês emitem certificado?</b>
+                    <p>
+                        Sim! Emitimos certificado reconhecido ao final de cada módulo.
+                    </p>
+                </div>
+                <div class="card">
+                    <b class="pergunta">Como faço para me matricular?</b>
+                    <p>
+                        Basta entrar em contato pelo WhatsApp ou visitar nossa escola.
+                    </p>
+                </div>
+                <div class="card">
+                    <b class="pergunta">Posso repor aulas perdidas?</b>
+                    <p>
+                        Sim! Oferecemos reposições mediante agendamento prévio.
                     </p>
                 </div>
             </div>
@@ -277,103 +324,96 @@
             </button>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="img/logo-cwb-horizontal.png" alt="CWB Idiomas" class="logo">
-                    </div>
-                    <p class="footer-description">
-                        Transformando vidas através do aprendizado de idiomas.
-                        Sua jornada para a fluência começa aqui.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h3 class="footer-title">Navegação</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/cursos.html">Cursos</a></li>
-                        <li><a href="pages/metodologia.html">Metodologia</a></li>
-                        <li><a href="pages/sobre.html">Sobre Nós</a></li>
-                        <li><a href="pages/planos.html">Planos</a></li>
-                        <li><a href="pages/eventos.html">Eventos</a></li>
-                        <li><a href="pages/faq.html">FAQ</a></li>
-                        <li><a href="pages/contato.html">Contato</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3 class="footer-title">Cursos</h3>
-                    <ul class="footer-links">
-                        <li><a href="pages/cursos.html#kids">Kids (6-12 anos)</a></li>
-                        <li><a href="pages/cursos.html#teens">Teens (13-17 anos)</a></li>
-                        <li><a href="pages/cursos.html#adults">Adults (18+ anos)</a></li>
-                        <li><a href="pages/cursos.html#preparatorios">Preparatórios</a></li>
-                        <li><a href="pages/cursos.html#conversacao">Conversação</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3 class="footer-title">Contato</h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Rua das Flores, 123<br>Centro - Curitiba/PR</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+5541999999999">(41) 99999-9999</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:contato@cwbidiomas.com.br">contato@cwbidiomas.com.br</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Seg - Sex: 8h às 20h<br>Sáb: 8h às 12h</span>
-                        </div>
-                    </div>
-                </div>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-content">
+            <div class="footer-section">
+               <div class="footer-logo">
+                  <img src="img/logo/logo-cwb-horizontal.svg" alt="CWB Idiomas" class="logo">
+               </div>
+               <p class="footer-description">
+                  Transformando vidas através do aprendizado de idiomas.
+                  Sua jornada para a fluência começa aqui.
+               </p>
+               <div class="social-links">
+                  <a href="https://www.facebook.com/people/CWBidiomas/61563368818904/?_rdr" class="social-link"
+                     aria-label="Facebook">
+                     <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.instagram.com/cwbidiomas/" class="social-link" aria-label="Instagram">
+                     <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="social-link" aria-label="LinkedIn">
+                     <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="social-link" aria-label="Linktree">
+                     <i class="fa-brands fa-linktree"></i>
+                  </a>
+               </div>
             </div>
-
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 CWB Idiomas. Todos os direitos reservados.</p>
-                    <div class="footer-bottom-links">
-                        <a href="#">Política de Privacidade</a>
-                        <a href="#">Termos de Uso</a>
-                    </div>
-                </div>
+            <div class="footer-section">
+               <h3 class="footer-title">Navegação</h3>
+               <ul class="footer-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="cursos.html">Cursos</a></li>
+                  <li><a href="metodologia.html">Metodologia</a></li>
+                  <li><a href="sobre.html">Sobre Nós</a></li>
+                  <li><a href="eventos.html">Eventos</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+               </ul>
             </div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/5541999999999?text=Olá! Gostaria de saber mais sobre os cursos da CWB Idiomas."
-        class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+            <div class="footer-section">
+               <h3 class="footer-title">Cursos</h3>
+               <ul class="footer-links">
+                  <li><a href="cursos.html#kids">Kids (6-12 anos)</a></li>
+                  <li><a href="cursos.html#teens">Teens (13-17 anos)</a></li>
+                  <li><a href="cursos.html#adults">Adults (18+ anos)</a></li>
+                  <li><a href="cursos.html#preparatorios">Preparatórios</a></li>
+                  <li><a href="cursos.html#conversacao">Conversação</a></li>
+               </ul>
+            </div>
+            <div class="footer-section">
+               <h3 class="footer-title">Contato</h3>
+               <div class="contact-info">
+                  <div class="contact-item">
+                     <i class="fas fa-map-marker-alt"></i>
+                     <span>Rua João Palomeque, 128<br>Novo Mundo - Curitiba/PR</span>
+                  </div>
+                  <div class="contact-item">
+                     <i class="fas fa-phone"></i>
+                     <a href="tel:5541991345683">(41) 99134-5683</a>
+                  </div>
+                  <div class="contact-item">
+                     <i class="fas fa-envelope"></i>
+                     <a href="mailto:contato@cwbidiomas.com.br">contato@cwbidiomas.com.br</a>
+                  </div>
+                  <div class="contact-item">
+                     <i class="fas fa-clock"></i>
+                     <span>Seg - Sex: 9h às 21h<br>Sáb: 9h às 21h</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="footer-bottom-content">
+               <p>&copy; 2025 CWB Idiomas. Todos os direitos reservados.</p>
+               <div class="footer-bottom-links">
+                  <a href="politica-privacidade.html">Política de Privacidade</a>
+                  <a href="termos-de-uso.html">Termos de Uso</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <a href="https://wa.me/5541991345683?text=Olá! Gostaria de saber mais sobre os cursos da CWB Idiomas."
+      class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+   </a>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <script src="js/contato.js"></script>
 </body>
 
 </html>
