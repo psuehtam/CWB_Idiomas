@@ -1,5 +1,6 @@
 @import url('global.css');
 
+/* === BANNER PRINCIPAL === */
 .banner {
     display: flex;
     margin-top: 80px;
@@ -85,6 +86,7 @@
     transform: translateY(-2px);
 }
 
+/* === SEÇÃO DE CURSOS === */
 .cursos {
     align-items: center;
     display: flex;
@@ -162,6 +164,7 @@
     gap: 10px;
 }
 
+/* === SEÇÃO "POR QUE ESCOLHER" === */
 .because {
     align-items: center;
     display: flex;
@@ -244,6 +247,7 @@
     text-decoration: none;
 }
 
+/* === SEÇÃO DE OPINIÕES/DEPOIMENTOS === */
 .opinion h2{
     color: var(--white-text);
 }
@@ -365,6 +369,7 @@
     transform: scale(1.2);
 }
 
+/* === SEÇÃO DA GALERIA === */
 .galery {
     color: var(--white-text);
     display: flex;
@@ -394,8 +399,8 @@
 
 .galery-img {
     overflow: hidden;
-    width: 230px;
-    height: 160px;
+    width: 200px;
+    height: 140px;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
@@ -410,6 +415,7 @@
     transform: scale(1.2);
 }
 
+/* === SEÇÃO FINAL/CTA === */
 .fnl {
     color: var(--title);
     display: flex;
@@ -541,7 +547,6 @@
         flex-direction: column;
     }
     
-    /* GALERIA CORRIGIDA PARA MOBILE */
     .galery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
