@@ -1,13 +1,6 @@
 @import url("global.css");
 
-/* === SEÇÃO PRINCIPAL === */
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: #111;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
+
 
 /* === CABEÇALHO === */
 .section-header {
@@ -26,7 +19,7 @@ body {
 
 /* === HISTÓRIA === */
 .sobre-historia {
-    background-color: #1a1a1a;
+    background-color: var(--dark-bg);
     padding: 5rem 1rem;
 }
 
@@ -36,13 +29,15 @@ body {
 }
 
 .sobre-historia h2 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+    color: var(--white-text);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .sobre-historia p {
-    color: #cfcfcf;
+    color: var(--white-text);
     font-size: 1rem;
     line-height: 1.8;
     max-width: 950px;
@@ -60,19 +55,19 @@ body {
 }
 
 .historia-dados h3 {
-    color: #ff005c;
+    color: var(--magent-color);
     font-size: 1.8rem;
     font-weight: 700;
 }
 
 .historia-dados p {
-    color: #bbb;
+    color:var(--gray-text);
     font-size: 0.9rem;
 }
 
 /* === IDENTIDADE === */
 .sobre-identidade {
-    background-color: #161616;
+    background-color: var(--gray-bg);
     padding: 5rem 1rem;
 }
 
@@ -82,15 +77,17 @@ body {
 }
 
 .sobre-identidade h2 {
-    text-align: center;
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
+    color: var(--white-text);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;  
+    text-align: center;  
 }
 
 .sobre-identidade p.subtitulo {
     text-align: center;
-    color: #aaa;
+    color: var(--gray-text);
     margin-bottom: 3rem;
 }
 
@@ -102,7 +99,7 @@ body {
 }
 
 .card-identidade {
-    background-color: #1f1f1f;
+    background-color: var(--dark-bg);
     border-radius: 12px;
     padding: 2rem;
     flex: 1 1 280px;
@@ -113,7 +110,7 @@ body {
 
 .card-identidade:hover {
     transform: translateY(-5px);
-    background-color: #252525;
+    background-color: var(--dark-text);
 }
 
 .card-identidade i {
@@ -125,18 +122,18 @@ body {
 .card-identidade h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #fff;
+    color: var(--white-text);
 }
 
 .card-identidade p {
-    color: #bbb;
+    color: var(--gray-text);
     line-height: 1.6;
     font-size: 0.95rem;
 }
 
 /* === EQUIPE === */
 .sobre-equipe {
-    background-color: #1a1a1a;
+    background-color: var(--dark-bg);
     padding: 5rem 1rem;
 }
 
@@ -146,15 +143,17 @@ body {
 }
 
 .sobre-equipe h2 {
+    color: var(--white-text);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;  
     text-align: center;
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
 }
 
 .sobre-equipe p.subtitulo {
     text-align: center;
-    color: #aaa;
+    color: var(--gray-text);
     margin-bottom: 3rem;
 }
 
@@ -166,7 +165,7 @@ body {
 }
 
 .card-equipe {
-    background-color: #1f1f1f;
+    background-color: var(--dark-bg);
     border-radius: 14px;
     padding: 2rem;
     flex: 1 1 300px;
@@ -176,46 +175,30 @@ body {
 }
 
 .card-equipe:hover {
-    background-color: #252525;
+    background-color: var(--dark-text) ;
     transform: translateY(-6px);
 }
 
 .card-equipe h3 {
-    color: #fff;
+    color: var(--white-text);
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
 .card-equipe p.cargo {
-    color: #2ae4a0;
+    color: var(--green-color);
     font-weight: 500;
     font-size: 0.95rem;
     margin-bottom: 1rem;
 }
 
 .card-equipe p {
-    color: #bbb;
+    color: var(--gray-text);
     font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
-
-.card-equipe .btn-equipe {
-    display: inline-block;
-    background-color: transparent;
-    color: #ff005c;
-    border: 1px solid #ff005c;
-    border-radius: 20px;
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.card-equipe .btn-equipe:hover {
-    background-color: #ff005c;
-    color: #fff;
-}
+    
 
 
 /* === RESPONSIVIDADE === */
