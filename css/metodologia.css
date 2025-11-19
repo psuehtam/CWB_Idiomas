@@ -1,5 +1,9 @@
 @import url(global.css);
 
+a{
+    text-decoration: none;
+}
+
 .banner {
     margin-top: 80px;
     width: 100%;
