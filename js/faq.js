@@ -5,14 +5,13 @@ btnPerguntas.forEach((btn) => {
         const card = btn.closest('.card');
         const resposta = card.querySelector('.resposta');
 
-        document.querySelectorAll('.perguntas-frequentes .card .resposta.active').forEach((r) => {
-            if (r !== resposta) {
-                r.style.maxHeight = null;
-                r.classList.remove('active');
+        document.querySelectorAll('.perguntas-frequentes .card .resposta.active').forEach((res) => {
+            if (res !== resposta) {
+                res.style.maxHeight = null;
+                res.classList.remove('active');
             }
         });
 
-        // Abre ou fecha a resposta clicada
         if (resposta.classList.contains('active')) {
             resposta.style.maxHeight = null;
             resposta.classList.remove('active');
